@@ -1,0 +1,1322 @@
+{
+  "navbar": {
+    "workflow": "HOW IT WORKS",
+    "platform": "PLATFORM",
+    "security": "SECURITY",
+    "login": "LOG IN",
+    "register": "GET STARTED"
+  },
+  "register": {
+    "title": "Create Account",
+    "subtitleStep1": "Step 1: Select your role and setup credentials",
+    "subtitleStep2": "Step 2: Tell us about yourself",
+    "subtitleStep3": "Step 3: Verification Document",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Log in here",
+    "role": {
+      "label": "Select Account Type",
+      "patient": "Patient",
+      "specialist": "Specialist"
+    },
+    "fields": {
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dateOfBirth": "Date of Birth",
+      "sex": "Biological Sex",
+      "specialization": "Specialization",
+      "licenseNumber": "License Number",
+      "clinic": "Clinic / Affiliation",
+      "codParafa": "Stamp Code",
+      "unitateSanitara": "Healthcare Unit",
+      "numarOndr": "ONDR Number",
+      "institutieAbsolvire": "Graduating Institution",
+      "tipCertificare": "Certification Type",
+      "numarCertificare": "Certification Number"
+    },
+    "tipCertificare": {
+      "placeholder": "Select type",
+      "ANEFS": "ANEFS (National Academy of Physical Education and Sport)",
+      "NASM": "NASM (National Academy of Sports Medicine)",
+      "ACE": "ACE (American Council on Exercise)",
+      "ISSA": "ISSA (International Sports Sciences Association)",
+      "ALTELE": "Other"
+    },
+    "params": {
+      "male": "Male",
+      "female": "Female"
+    },
+    "subrole": {
+      "label": "Specialist Type",
+      "doctor": "Doctor",
+      "nutritionist": "Nutritionist",
+      "coach": "Trainer"
+    },
+    "placeholders": {
+      "optional": "Optional",
+      "specialization": "Select specialization"
+    },
+    "buttons": {
+      "next": "Next Step",
+      "submit": "Registration",
+      "loading": "Processing..."
+    },
+    "errors": {
+      "missingFields": "Please fill in all required fields.",
+      "passwordMismatch": "Passwords do not match.",
+      "passwordLength": "Password must be at least 8 characters long."
+    },
+    "success": {
+      "title": "Registration Successful",
+      "message": "Your account has been created successfully. You can now log in.",
+      "loginButton": "Go to Login"
+    },
+    "docUpload": {
+      "title": "Upload Verification Document",
+      "description": "Upload a copy of the document attesting your professional qualifications (license, certificate, diploma). Accepted formats: PDF, JPEG or PNG.",
+      "dragDrop": "Drag file here or click to select",
+      "fileLimits": "PDF, JPEG or PNG · max 10 MB",
+      "uploadButton": "Upload Document",
+      "uploadLoading": "Uploading...",
+      "uploadSuccess": "Document uploaded successfully",
+      "continueButton": "Continue",
+      "skipButton": "Skip for now (you can submit later)",
+      "errors": {
+        "invalidType": "Invalid file type. PDF, JPEG and PNG are accepted.",
+        "fileTooLarge": "File exceeds the 10 MB limit.",
+        "uploadFailed": "Error uploading document. Please try again."
+      }
+    },
+    "verificationPending": {
+      "title": "Request Submitted",
+      "message": "Your account has been created successfully. Our team will review your documents and notify you by email as soon as possible.",
+      "loginButton": "Go to Login"
+    }
+  },
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Sign in to access your health dashboard",
+    "fields": {
+      "email": "Email Address",
+      "password": "Password"
+    },
+    "buttons": {
+      "submit": "Sign In",
+      "loading": "Signing in..."
+    },
+    "errors": {
+      "missingFields": "Please enter your email and password."
+    },
+    "noAccount": "Don't have an account?",
+    "registerLink": "Create one here"
+  },
+  "footer": {
+    "slogan": "Your precision health platform",
+    "contact": "CONTACT",
+    "copyright": "2026 © HEALTH MONITOR PLATFORM"
+  },
+  "records": {
+    "title": "Add Medical Records",
+    "subtitle": "Manually fill in the fields or upload a PDF lab report.",
+    "tabManual": "Manual Entry",
+    "tabPdf": "Upload PDF",
+    "generalInfo": "General Information",
+    "date": "Collection Date",
+    "biometrics": "Biometrics & Vitals",
+    "sexLabel": "Biological Sex",
+    "sexNone": "Undefined",
+    "sexMale": "Male",
+    "sexFemale": "Female",
+    "age": "Age (years)",
+    "waist": "Waist Circumference (cm)",
+    "smokerLabel": "Smoker",
+    "smokerNo": "No",
+    "smokerYes": "Yes",
+    "systolic": "Systolic BP (mmHg)",
+    "diastolic": "Diastolic BP (mmHg)",
+    "glucoseLipids": "Glucose & Lipids",
+    "fastingGlucose": "Fasting Glucose (mg/dL)",
+    "totalCholesterol": "Total Cholesterol (mg/dL)",
+    "triglycerides": "Triglycerides (mg/dL)",
+    "liverInflammation": "Liver & Inflammation",
+    "kidneyFunction": "Kidney Function",
+    "creatinine": "Creatinine (mg/dL)",
+    "urea": "Urea (mg/dL)",
+    "uacr": "UACR (Albumin-to-Creatinine Ratio)",
+    "uricAcid": "Uric Acid (mg/dL)",
+    "hematology": "Hematology & Nutrition",
+    "hemoglobin": "Hemoglobin (g/dL)",
+    "ferritin": "Ferritin (ng/mL)",
+    "vitaminD": "Vitamin D (ng/mL)",
+    "folate": "Folate (ng/mL)",
+    "hba1c": "HbA1c (%)",
+    "bmi": "BMI (Body Mass Index)",
+    "hdl": "HDL Cholesterol",
+    "ldl": "LDL Cholesterol",
+    "alt": "ALT",
+    "ast": "AST",
+    "ggt": "GGT",
+    "crp": "CRP (C-Reactive Protein)",
+    "mcv": "MCV",
+    "saveLoading": "Saving...",
+    "saveButton": "Save Records",
+    "minimumFieldsRequired": "Age and sex are required for ML analysis.",
+    "lowDataWarning": "You have filled {{count}} of 26 fields. Add more data for more accurate results.",
+    "completenessEncouragement": "The more markers you fill in, the more accurate your ML predictions will be.",
+    "completenessLow": "Low coverage",
+    "completenessModerate": "Moderate coverage",
+    "completenessGood": "Good coverage",
+    "uploadTitle": "Upload PDF File",
+    "dragDrop": "Drag file here or click to select",
+    "dragDropHover": "Drop file here",
+    "fileLimits": "PDF files only, max 10 MB",
+    "uploadLoading": "Uploading...",
+    "uploadButton": "Upload Document",
+    "deleteFile": "Remove file",
+    "errors": {
+      "saveFailed": "An error occurred while saving the records. Please check the data.",
+      "uploadFailed": "An error occurred while uploading the file.",
+      "invalidType": "Only PDF files are accepted.",
+      "fileTooLarge": "File is too large. Limit is 10 MB."
+    },
+    "success": {
+      "parsed": "File analyzed successfully! Please verify the extracted data before saving."
+    },
+    "markersLocked": "Locked markers",
+    "markersLockedHint": "Encrypted marker — click to request access",
+    "markersAccess": "Marker access",
+    "markerDecrypted": "Decrypted",
+    "markerLocked": "Locked",
+    "requestAccessCta": "Request access to locked markers"
+  },
+  "patientDashboard": {
+    "welcome": "Welcome back, {{name}}!",
+    "welcomeFallback": "Patient",
+    "subtitle": "Here you can see your general health score and upload documents.",
+    "healthScore": "Health Score Indicator",
+    "alerts": "Medical Alerts",
+    "addRecords": "Add Records",
+    "addRecordsSub": "Manual entry or PDF Upload",
+    "loading": "Loading data...",
+    "abeStatus": "Your data is encrypted",
+    "abeStatusDetail": "Markers are secured with ABE encryption",
+    "abeShieldLabel": "ABE security status"
+  },
+  "predictions": {
+    "title": "ML Prediction Results",
+    "subtitle": "AI Models • v1.0-ModelB",
+    "loading": {
+      "title": "Processing",
+      "description": "Our application is analyzing your data, the response will be immediate."
+    },
+    "error": {
+      "title": "Analysis Error",
+      "defaultMsg": "Data unavailable.",
+      "notFoundMsg": "No prediction exists yet for this record.",
+      "retryButton": "Generate prediction",
+      "backButton": "Back to Dashboard"
+    },
+    "healthScore": {
+      "title": "Health Score",
+      "description": "The score is aggregated using our analysis algorithms for 8 major medical conditions. A high score indicates a reduced overall risk."
+    },
+    "conditions": {
+      "risc_cardiovascular": "Cardiovascular Risk",
+      "steatoza_hepatica": "Fatty Liver",
+      "boala_renala": "Kidney Disease",
+      "anemie": "Anemia",
+      "sindrom_metabolic": "Metabolic Syndrome",
+      "hipertensiune": "Hypertension",
+      "dislipidemie": "Dyslipidemia",
+      "diabet": "Diabetes"
+    },
+    "classes": {
+      "anemie": {
+        "0": "Normal Hemoglobin",
+        "1": "Anemia"
+      },
+      "boala_renala": {
+        "0": "Healthy Kidneys",
+        "1": "Kidney Disease"
+      },
+      "diabet": {
+        "0": "Normal Blood Sugar",
+        "1": "Prediabetes",
+        "2": "Diabetes"
+      },
+      "dislipidemie": {
+        "0": "Normal Lipids",
+        "1": "Dyslipidemia"
+      },
+      "hipertensiune": {
+        "0": "Normal Blood Pressure",
+        "1": "Hypertension"
+      },
+      "risc_cardiovascular": {
+        "0": "Low Risk",
+        "1": "High Risk"
+      },
+      "sindrom_metabolic": {
+        "0": "No Metabolic Syndrome",
+        "1": "Metabolic Syndrome"
+      },
+      "steatoza_hepatica": {
+        "0": "Healthy Liver",
+        "1": "Fatty Liver"
+      },
+      "default": "Unknown"
+    },
+    "modelB": "Screening — Metabolic Profile",
+    "modelA": "Confirmed — Diagnostic Marker Present",
+    "downloadReport": "Download PDF Report",
+    "downloadError": "Failed to generate report. Please try again.",
+    "completenessLow": "Low data quality: only {{count}}/{{total}} markers provided. Results may be unreliable.",
+    "completenessMedium": "Moderate coverage: {{count}}/{{total}} markers provided. Add more data for better accuracy."
+  },
+  "trendChart": {
+    "title": "Lab Overview",
+    "subtitle": "Monitoring over time",
+    "value": "Value",
+    "noData": "Insufficient data for the selected marker."
+  },
+  "patientHistory": {
+    "backToDashboard": "Back to Dashboard",
+    "title": "Full History",
+    "subtitle": "Track the evolution of your indicators and health scores over time.",
+    "loading": "Loading history...",
+    "historyButton": "Full History",
+    "tabPredictions": "ML Predictions",
+    "tabMarkers": "Raw Markers",
+    "needTwoRecords": "You need at least 2 records to compare markers.",
+    "selectRecord": "Record",
+    "uploadedAt": "uploaded {{date}}",
+    "noRecordsYet": "No records found. Upload a lab PDF or add a manual entry to get started.",
+    "noMarkersInRecord": "This record contains no markers.",
+    "colMarker": "Marker",
+    "colValue": "Value",
+    "colReference": "Reference",
+    "colStatus": "Status",
+    "statusOk": "In Range",
+    "statusFlag": "Out of Range"
+  },
+  "recordDetail": {
+    "backToHistory": "Back to History",
+    "backToPatientSheet": "Back to Patient Sheet",
+    "sourcePdf": "PDF Upload",
+    "sourceManual": "Manual Entry",
+    "uploadedAt": "uploaded {{date}}",
+    "loading": "Loading record...",
+    "notFound": "Record not found.",
+    "noAccess": "You do not have access to this record.",
+    "requestAccessCta": "Request access to markers",
+    "viewOriginalPdf": "View original document"
+  },
+  "timeline": {
+    "title": "Medical History",
+    "subtitle": "All your records and scores",
+    "noPrediction": "No prediction",
+    "noRecords": "No records found.",
+    "healthScore": "Health Score",
+    "viewDetails": "View detailed results",
+    "drawerTitle": "Record Details",
+    "viewFullResults": "View Full Results",
+    "riskSummary": "Risk Summary",
+    "rawMarkers": "Raw Markers",
+    "sourcePdf": "PDF Upload",
+    "sourceManual": "Manual",
+    "uploadedAt": "uploaded {{date}}"
+  },
+  "sidebar": {
+    "home": "Home",
+    "history": "Medical History",
+    "compare": "Compare Records",
+    "logout": "Log Out",
+    "memberFallback": "Member",
+    "myPatients": "My Patients",
+    "myProfile": "My Profile",
+    "requests": "Requests",
+    "mySpecialists": "My Specialists",
+    "messages": "Messages",
+    "myPlans": "My Plans",
+    "sentPlans": "Sent Plans"
+  },
+  "comparePage": {
+    "title": "Compare Records",
+    "subtitle": "See the evolution of your indicators by comparing two different sets of medical records.",
+    "selectRecordA": "Select first record",
+    "selectRecordB": "Select second record",
+    "loading": "Loading data...",
+    "noRecords": "Not enough records to perform a comparison.",
+    "insufficientTitle": "Insufficient Data",
+    "addRecordsLink": "Add a new set of records",
+    "markersComparison": "Markers Comparison",
+    "marker": "Marker",
+    "recordA": "Set A",
+    "recordB": "Set B",
+    "uploadedAt": "uploaded {{date}}",
+    "difference": "Difference",
+    "standard": "Standard",
+    "backToDashboard": "Back to Dashboard",
+    "infoText1": "For an optimal comparison, ",
+    "infoTextBold": "Set A (Left) will always represent the most recent records",
+    "infoText2": ". If you select a newer set on the right, the system will swap them automatically.",
+    "legendTitle": "Color Legend",
+    "legendPositive": "Positive evolution (trend toward optimal values)",
+    "legendNegative": "Negative evolution (trend away from optimal values)",
+    "legendNeutral": "Stationary value or marker without defined clinical standard",
+    "legendNote": "Note: The difference is calculated mathematically (A - B), and colors reflect clinical impact based on the Standard column."
+  },
+  "specialistDashboard": {
+    "welcome": "Welcome, {{name}}!",
+    "welcomeFallback": "Specialist",
+    "subtitle": "Manage your patients and requests from the control panel.",
+    "loading": "Loading...",
+    "kpi": {
+      "activePatients": "Active Patients",
+      "pendingRequests": "Pending Requests",
+      "redFlags": "Active Alerts"
+    },
+    "patientTable": {
+      "title": "My Patients",
+      "name": "Name",
+      "sex": "Sex",
+      "age": "Age",
+      "healthScore": "Health Score",
+      "testDate": "Test Date",
+      "uploadedAt": "uploaded {{date}}",
+      "redFlags": "Alerts",
+      "actions": "Actions",
+      "view": "View",
+      "chat": "Chat",
+      "empty": "No active patients at the moment.",
+      "na": "N/A",
+      "sexMale": "M",
+      "sexFemale": "F"
+    },
+    "requestInbox": {
+      "title": "Connection Requests",
+      "empty": "No pending connection requests.",
+      "from": "From",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approveError": "Error approving request.",
+      "rejectError": "Error rejecting request."
+    },
+    "specialization": {
+      "CARDIOLOGIE": "Cardiology",
+      "ENDOCRINOLOGIE": "Endocrinology",
+      "DIABET_NUTRITIE_BOLI_METABOLICE": "Diabetes, Nutrition & Metabolic Diseases",
+      "GASTROENTEROLOGIE": "Gastroenterology",
+      "HEPATOLOGIE": "Hepatology",
+      "NEFROLOGIE": "Nephrology",
+      "HEMATOLOGIE": "Hematology",
+      "MEDICINA_INTERNA": "Internal Medicine",
+      "UROLOGIE": "Urology",
+      "NUTRITIONIST": "Nutritionist",
+      "COACH": "Personal Trainer",
+      "ALTA": "Other Specialization"
+    }
+  },
+  "relations": {
+    "status": {
+      "PENDING": "Pending",
+      "APPROVED": "Approved",
+      "REJECTED": "Rejected",
+      "REVOKED": "Revoked"
+    },
+    "requestSent": "Connection request sent.",
+    "requestError": "Error sending request.",
+    "approveSuccess": "Request approved.",
+    "rejectSuccess": "Request rejected.",
+    "revokeSuccess": "Connection revoked.",
+    "cancelSuccess": "Request cancelled.",
+    "actionError": "Error processing action."
+  },
+  "redFlags": {
+    "risc_cardiovascular": "Cardiovascular Risk",
+    "steatoza_hepatica": "Fatty Liver",
+    "boala_renala": "Kidney Disease",
+    "anemie": "Anemia",
+    "sindrom_metabolic": "Metabolic Syndrome",
+    "hipertensiune": "Hypertension",
+    "dislipidemie": "Dyslipidemia",
+    "diabet": "Diabetes",
+    "unknown": "Alert"
+  },
+  "mySpecialists": {
+    "title": "My Specialists",
+    "subtitle": "Search and connect with medical specialists.",
+    "loading": "Loading...",
+    "search": {
+      "title": "Find a Specialist",
+      "namePlaceholder": "Search by name...",
+      "specializationLabel": "Specialization",
+      "allSpecializations": "All Specializations",
+      "button": "Search",
+      "noResults": "No specialists found.",
+      "requestButton": "Send Request",
+      "requestPending": "Request Sent",
+      "requestApproved": "Connected"
+    },
+    "active": {
+      "title": "Active Specialists",
+      "empty": "You are not connected to any specialist.",
+      "chatButton": "Chat",
+      "revokeButton": "Disconnect",
+      "revokeTitle": "Disconnect Specialist",
+      "revokeConfirm": "Are you sure you want to disconnect this specialist?"
+    },
+    "pending": {
+      "title": "Sent Requests",
+      "empty": "No pending requests.",
+      "cancelButton": "Cancel"
+    }
+  },
+  "patientSheet": {
+    "title": "Medical Record",
+    "loading": "Loading patient record...",
+    "noAccess": "Access Denied",
+    "noAccessDesc": "You do not have an active relationship with this patient.",
+    "back": "Back",
+    "chat": "Open conversation",
+    "trendTitle": "Marker Trends",
+    "timelineTitle": "Medical Timeline",
+    "markersTitle": "Raw Values"
+  },
+  "confirmModal": {
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "specialistPatients": {
+    "title": "My Patients",
+    "subtitle": "Full list of patients with active access.",
+    "searchPlaceholder": "Search by name...",
+    "filterAll": "All Patients",
+    "filterAlerts": "Alerts Only",
+    "empty": "No active patients yet.",
+    "emptyAlerts": "No patients with active alerts."
+  },
+  "specialistHome": {
+    "recentPatients": {
+      "title": "Recent Patients",
+      "viewAll": "View All Patients",
+      "empty": "No active patients yet."
+    },
+    "recentRequests": {
+      "title": "Pending Requests",
+      "viewAll": "View All Requests",
+      "empty": "No pending requests."
+    },
+    "mealPlanCard": {
+      "title": "Meal Plan Builder",
+      "description": "Send personalized meal plans to your patients directly through chat.",
+      "cta": "Messages"
+    },
+    "workoutPlanCard": {
+      "title": "Workout Plan Builder",
+      "description": "Send personalized workout plans to your patients directly through chat.",
+      "cta": "Messages"
+    }
+  },
+  "adminDashboard": {
+    "welcome": "Welcome, {{name}}!",
+    "subtitle": "Administration Panel",
+    "errorLoad": "Error loading statistics.",
+    "kpi": {
+      "patients": "Patients",
+      "doctors": "Doctors",
+      "nutritionistsCoaches": "Nutritionists & Trainers",
+      "pendingVerifications": "Pending Verifications"
+    },
+    "stats": {
+      "records": "Analyses & Predictions",
+      "recordsHint": "One prediction generated per uploaded analysis",
+      "relations": "Active Relations"
+    },
+    "actions": {
+      "manageUsers": "Manage Users",
+      "verificationQueue": "Verification Queue"
+    },
+    "verification": {
+      "title": "Verification Requests",
+      "resultCount": "pending requests",
+      "empty": "No pending requests. All specialists have been reviewed.",
+      "errorLoad": "Error loading verification requests.",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approveTitle": "Approve Specialist",
+      "approveMessage": "Are you sure you want to approve {{name}}'s account? They will gain full access as a verified specialist.",
+      "rejectTitle": "Reject Verification",
+      "rejectMessage": "Enter the rejection reason for {{name}}. The specialist will be notified.",
+      "rejectReason": "Reason",
+      "rejectPlaceholder": "e.g. Invalid document, incomplete data...",
+      "rejectRequired": "A reason is required.",
+      "rejectMinChars": "The reason must be at least 10 characters.",
+      "rejectConfirm": "Confirm Rejection",
+      "actionError": "Error processing request. Please try again.",
+      "submitting": "Processing..."
+    },
+    "users": {
+      "title": "User Management",
+      "resultCount": "users found",
+      "backToDashboard": "Back to Dashboard",
+      "searchPlaceholder": "Search by name or email...",
+      "empty": "No users found.",
+      "tabs": {
+        "all": "All",
+        "patients": "Patients",
+        "doctors": "Doctors",
+        "na": "Nutritionists & Trainers"
+      },
+      "columns": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "createdAt": "Registered"
+      },
+      "roles": {
+        "PATIENT": "Patient",
+        "DOCTOR": "Doctor",
+        "NUTRITIONIST": "Nutritionist",
+        "COACH": "Coach",
+        "ADMIN": "Admin"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "toggle": {
+        "activate": "Activate",
+        "deactivate": "Deactivate",
+        "activateTitle": "Activate Account",
+        "deactivateTitle": "Deactivate Account",
+        "activateMessage": "Are you sure you want to activate {{name}}'s account?",
+        "deactivateMessage": "Are you sure you want to deactivate {{name}}'s account? The user will no longer be able to access the platform.",
+        "error": "Error updating account status."
+      },
+      "expand": {
+        "verificationStatus": "Verification status",
+        "rejectionReason": "Rejection reason",
+        "documentLink": "View verification document",
+        "loadError": "Error loading professional credentials."
+      },
+      "verificationStatuses": {
+        "PENDING_VERIFICATION": "Pending",
+        "APPROVED": "Approved",
+        "REJECTED": "Rejected"
+      },
+      "pagination": {
+        "prev": "Previous",
+        "next": "Next",
+        "page": "Page {{current}} of {{total}}"
+      }
+    }
+  },
+  "specialistVerification": {
+    "pendingTitle": "Account Under Review",
+    "pendingMessage": "Your account is under review. You will be notified when the process is complete.",
+    "rejectedTitle": "Verification Rejected",
+    "rejectedReason": "Reason: {{reason}}",
+    "credentialsSection": "Submitted Professional Details",
+    "documentSection": "Verification Document",
+    "resubmitButton": "Resubmit Request",
+    "resubmitLoading": "Processing...",
+    "errors": {
+      "resubmitFailed": "Error resubmitting request. Please try again."
+    }
+  },
+  "specialistRequests": {
+    "title": "Requests & Connections",
+    "subtitle": "Manage received requests, sent requests, and active relationships.",
+    "received": {
+      "title": "Received Requests",
+      "empty": "No incoming requests pending."
+    },
+    "active": {
+      "title": "Active Relationships",
+      "empty": "No active relationships yet.",
+      "revokeButton": "Revoke",
+      "revokeTitle": "Revoke Connection",
+      "revokeConfirm": "Are you sure you want to revoke this patient's access?"
+    }
+  },
+  "specialistProfile": {
+    "pageTitle": "My Profile",
+    "sections": {
+      "basicInfo": "Basic Information",
+      "extendedDetails": "Professional Details",
+      "workExperience": "Work Experience",
+      "education": "Education",
+      "certifications": "Certifications",
+      "photo": "Profile Photo"
+    },
+    "saveButton": "Save",
+    "saving": "Saving...",
+    "saveSuccess": "Changes saved successfully.",
+    "saveError": "Error saving changes. Please try again.",
+    "previewButton": "Preview Public Profile",
+    "reverification": {
+      "button": "Request Re-verification",
+      "confirmTitle": "Request Re-verification",
+      "confirmMessage": "Are you sure you want to request re-verification? Your status will be reset to 'Pending' and your profile will no longer be publicly visible until approved.",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "successToast": "Re-verification request submitted.",
+      "errorToast": "Error submitting request."
+    },
+    "workplacePrefill": "The Employer field has been pre-filled from the healthcare unit registered at verification. You can edit this value.",
+    "photoUpload": {
+      "changePhoto": "Change Photo",
+      "removePhoto": "Remove Photo",
+      "uploadError": "Error uploading photo.",
+      "removeError": "Error removing photo.",
+      "sizeHint": "JPEG, PNG or WebP · max 5 MB"
+    },
+    "basicInfo": {
+      "bioLabel": "Professional Description",
+      "bioPlaceholder": "Introduce yourself in a few words...",
+      "websiteLabel": "Website",
+      "websitePlaceholder": "https://",
+      "programLucruLabel": "Working Hours",
+      "programLucruPlaceholder": "e.g. Mon–Fri, 09:00–17:00",
+      "limbiVorbiteLabel": "Languages Spoken",
+      "charsRemaining": "{{count}} characters remaining"
+    },
+    "credentials": {
+      "sectionTitle": "Credentials",
+      "codParafaLabel": "Stamp Code",
+      "unitateSanitaraLabel": "Healthcare Unit",
+      "numarOndrLabel": "ONDR Number",
+      "institutieAbsolvireLabel": "Graduation Institution",
+      "tipCertificareLabel": "Certification Type",
+      "numarCertificareLabel": "Certification Number",
+      "documentLink": "View verification document",
+      "notProvided": "Not provided",
+      "reverificationNote": "Modifying credentials will send your account for re-verification. This process may take a few business days. Your active patient relations will not be affected."
+    },
+    "roleSpecific": {
+      "gradLabel": "Professional Grade",
+      "gradPlaceholder": "-- Select grade --",
+      "specializariSecundareLabel": "Secondary Specializations",
+      "competenteAtestateLabel": "Attested Competencies",
+      "competenteAtestateHint": "Add a competency and press Enter (max. 10)",
+      "specializareNutritieLabel": "Nutrition Specialization",
+      "specializareSportivaLabel": "Sport Specialization",
+      "filosofieProfesionalaLabel": "Professional Philosophy",
+      "filosofieProfesionalaPlaceholder": "Describe your professional approach...",
+      "maxTagsReached": "You have reached the limit of 10 attested competencies"
+    }
+  },
+  "publicProfile": {
+    "pageTitle": "Specialist Profile",
+    "sendRequest": "Send Connection Request",
+    "requestPending": "Request Sent",
+    "requestApproved": "Connected",
+    "chat": "Message",
+    "verifiedBadge": "Verified Specialist",
+    "about": "About",
+    "errorLoad": "Error loading profile.",
+    "notFound": "Profile not found or specialist is not verified.",
+    "unavailable": "Profile Unavailable",
+    "back": "Go Back",
+    "ownProfile": "This is your profile",
+    "editProfile": "Edit Profile",
+    "languagesTitle": "Languages Spoken",
+    "workingHoursTitle": "Working Hours",
+    "roleSpecificTitle": "Professional Profile",
+    "credentialsTitle": "Verified Credentials",
+    "verifiedCredential": "Verified at registration",
+    "sendingRequest": "Sending..."
+  },
+  "workExperience": {
+    "sectionTitle": "Work Experience",
+    "empty": "No entries added yet. Add your first work experience.",
+    "addButton": "Add Experience",
+    "modalTitleAdd": "Add Work Experience",
+    "modalTitleEdit": "Edit Work Experience",
+    "fields": {
+      "title": "Title / Position",
+      "employer": "Employer",
+      "location": "Location",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "currentPosition": "Current position (ongoing)",
+      "description": "Description"
+    },
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "editButton": "Edit",
+    "deleteButton": "Delete",
+    "present": "Present",
+    "deleteConfirmTitle": "Delete Work Experience",
+    "confirmDelete": "Are you sure you want to delete this entry?",
+    "saveError": "Error saving entry.",
+    "deleteError": "Error deleting entry."
+  },
+  "education": {
+    "sectionTitle": "Education",
+    "empty": "No institutions added yet.",
+    "addButton": "Add Education",
+    "modalTitleAdd": "Add Education",
+    "modalTitleEdit": "Edit Education",
+    "fields": {
+      "institution": "Institution",
+      "degree": "Degree / Title",
+      "fieldOfStudy": "Field of Study",
+      "yearCompleted": "Year Completed",
+      "honors": "Honors / Distinctions"
+    },
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "editButton": "Edit",
+    "deleteButton": "Delete",
+    "deleteConfirmTitle": "Delete Education",
+    "confirmDelete": "Are you sure you want to delete this entry?",
+    "saveError": "Error saving entry.",
+    "deleteError": "Error deleting entry."
+  },
+  "certifications": {
+    "sectionTitle": "Certifications",
+    "empty": "No certifications added yet.",
+    "addButton": "Add Certification",
+    "modalTitleAdd": "Add Certification",
+    "modalTitleEdit": "Edit Certification",
+    "fields": {
+      "name": "Name",
+      "issuingBody": "Issuing Organization",
+      "certificationNumber": "Certification Number",
+      "issueDate": "Issue Date",
+      "expiryDate": "Expiry Date"
+    },
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "editButton": "Edit",
+    "deleteButton": "Delete",
+    "deleteConfirmTitle": "Delete Certification",
+    "confirmDelete": "Are you sure you want to delete this certification?",
+    "saveError": "Error saving certification.",
+    "deleteError": "Error deleting certification.",
+    "noExpiry": "Does not expire",
+    "expired": "Expired",
+    "expiringSoon": "Expiring soon"
+  },
+  "profileCompletion": {
+    "tier": {
+      "baza": "Basic Profile",
+      "dezvoltare": "Growing Profile",
+      "avansat": "Advanced Profile",
+      "complet": "Complete Profile"
+    },
+    "nextAction": {
+      "photo": "Add a profile photo",
+      "bio": "Write a short description (min. 50 characters)",
+      "workExperience": "Add at least one work experience",
+      "education": "Add at least one educational institution",
+      "certifications": "Add at least one certification",
+      "roleSpecific": "Complete the fields specific to your role",
+      "languages": "Add at least one spoken language",
+      "workingHours": "Fill in your working hours"
+    },
+    "percentLabel": "{{percent}}% complete"
+  },
+  "languages": {
+    "RO": "Romanian",
+    "EN": "English",
+    "FR": "French",
+    "DE": "German",
+    "ES": "Spanish",
+    "IT": "Italian",
+    "OTHER": "Other language"
+  },
+  "specialistGrade": {
+    "REZIDENT": "Resident Doctor",
+    "SPECIALIST": "Specialist Doctor",
+    "PRIMAR": "Primary Care Physician"
+  },
+  "nutritionSpecialization": {
+    "CLINICA": "Clinical Nutrition",
+    "SPORTIVA": "Sports Nutrition",
+    "PEDIATRICA": "Pediatric Nutrition",
+    "ONCOLOGICA": "Oncological Nutrition",
+    "SARCINA": "Pregnancy Nutrition",
+    "ALTELE": "Other"
+  },
+  "sportSpecialization": {
+    "FITNESS_GENERAL": "General Fitness",
+    "CULTURISM": "Bodybuilding",
+    "RECUPERARE": "Medical Recovery",
+    "NUTRITIE_SPORTIVA": "Sports Nutrition",
+    "YOGA": "Yoga",
+    "PILATES": "Pilates",
+    "ATLETISM": "Athletics",
+    "ALTELE": "Other"
+  },
+  "chat": {
+    "title": "Messages",
+    "emptyState": "You have no active conversations.",
+    "selectConversation": "Select a conversation",
+    "loading": "Loading...",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "sendPlaceholder": "Write a message...",
+    "sendButton": "Send",
+    "systemRedFlagLabel": "Risk alert",
+    "systemRedFlagConditions": "Detected conditions",
+    "systemRedFlagLink": "View medical record",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "conversationList": {
+      "empty": "No active conversations.",
+      "unreadAria": "{{count}} unread messages",
+      "you": "You"
+    },
+    "bubble": {
+      "you": "You",
+      "read": "Read",
+      "delivered": "Delivered"
+    },
+    "composer": {
+      "placeholder": "Write a message...",
+      "send": "Send",
+      "disconnected": "Disconnected — reconnecting..."
+    },
+    "toast": {
+      "redFlagTitle": "Risk alert detected",
+      "redFlagBody": "{{count}} conditions were flagged as high risk for a patient.",
+      "viewPatient": "View patient sheet"
+    },
+    "accessRequest": {
+      "title": "Marker Access Request",
+      "requested": "Requested markers",
+      "justification": "Justification",
+      "approveSelected": "Approve Selected",
+      "declineAll": "Decline",
+      "pending": "Pending",
+      "approvedStatus": "Approved",
+      "declinedStatus": "Declined",
+      "confirmApproval": "Confirm Approval",
+      "confirmDeclinePrompt": "Are you sure you want to decline this request?",
+      "subDialogTitle": "Select Markers to Approve",
+      "subDialogSubtitle": "Uncheck any markers you do not want to approve.",
+      "subDialogConfirm": "Confirm Approval",
+      "subDialogCancel": "Cancel"
+    },
+    "accessResponse": {
+      "approved": "Request approved",
+      "declined": "Request declined",
+      "approvedMarkers": "Approved markers",
+      "noMarkers": "No markers approved",
+      "keyReissuedToast": "Access key updated"
+    },
+    "planBubble": {
+      "viewPlanCta": "View plan",
+      "sentBy": "From {{name}}",
+      "mealPlanLabel": "Meal Plan",
+      "workoutPlanLabel": "Workout Plan"
+    },
+    "plan": {
+      "mealPlanTitle": "Meal Plan",
+      "workoutPlanTitle": "Workout Plan",
+      "titleLabel": "Title",
+      "titlePlaceholder": "e.g. Week 1 meal plan...",
+      "contentLabel": "Content",
+      "contentPlaceholder": "Describe the plan in detail...",
+      "charCountTitle": "{{count}}/{{max}}",
+      "charCountContent": "{{count}}/{{max}}",
+      "send": "Send Plan",
+      "sending": "Sending...",
+      "cancel": "Cancel",
+      "error": "Failed to send the plan. Please try again.",
+      "successMessage": "Plan sent successfully."
+    },
+    "planReceived": {
+      "toast": "You received a new plan from your specialist.",
+      "cta": "View plan"
+    }
+  },
+  "notifications": {
+    "relationApproved": "Connection approved",
+    "relationRejected": "Request rejected",
+    "relationRevoked": "Connection revoked",
+    "verificationApproved": "Account approved",
+    "verificationRejected": "Verification rejected"
+  },
+  "markers": {
+    "sex": "Sex",
+    "age": "Age",
+    "bmi": "BMI (Body Mass Index)",
+    "waist_circumference": "Waist Circumference",
+    "systolic_bp": "Systolic Blood Pressure",
+    "diastolic_bp": "Diastolic Blood Pressure",
+    "hba1c": "Glycated Hemoglobin (HbA1c)",
+    "fasting_glucose": "Fasting Glucose",
+    "total_cholesterol": "Total Cholesterol",
+    "hdl": "HDL Cholesterol",
+    "ldl": "LDL Cholesterol",
+    "triglycerides": "Triglycerides",
+    "crp": "C-Reactive Protein (CRP)",
+    "alt": "Alanine Aminotransferase (ALT)",
+    "ast": "Aspartate Aminotransferase (AST)",
+    "ggt": "Gamma-Glutamyl Transferase (GGT)",
+    "creatinine": "Serum Creatinine",
+    "urea": "Serum Urea",
+    "uacr": "Urine Albumin-to-Creatinine Ratio (UACR)",
+    "uric_acid": "Uric Acid",
+    "hemoglobin": "Hemoglobin",
+    "mcv": "Mean Corpuscular Volume (MCV)",
+    "ferritin": "Ferritin",
+    "vitamin_d": "Vitamin D",
+    "folate": "Folate",
+    "smoker_status": "Smoker Status"
+  },
+  "markerGroups": {
+    "universal": "General",
+    "cardiovascular": "Cardiovascular",
+    "metabolic": "Metabolic",
+    "hepatic": "Hepatic",
+    "renal": "Renal",
+    "hematological": "Hematological"
+  },
+  "accessRequest": {
+    "title": "Request Marker Access",
+    "subtitle": "Select the markers you are requesting access to and provide a clinical justification.",
+    "selectAllLocked": "Select all",
+    "alreadyAccessible": "Access active",
+    "justificationLabel": "Clinical justification",
+    "justificationPlaceholder": "Describe the clinical reason for accessing these markers...",
+    "charCount": "{{count}}/1000",
+    "minCharsHint": "Minimum 20 characters",
+    "noMarkersSelected": "Select at least one marker",
+    "submitButton": "Send Request",
+    "cancelButton": "Cancel",
+    "submitting": "Sending...",
+    "successMessage": "Access request sent to the patient.",
+    "errorMessage": "Error sending request. Please try again.",
+    "conflictMessage": "A pending access request already exists for one or more of these markers. Wait for the patient to respond before sending another request.",
+    "requestAccessButton": "Request Access"
+  },
+  "plans": {
+    "viewModal": {
+      "mealPlanLabel": "Meal Plan",
+      "workoutPlanLabel": "Workout Plan",
+      "sentBy": "From {{name}}",
+      "sentOn": "{{date}}",
+      "copyButton": "Copy",
+      "copied": "Copied!",
+      "downloadPdf": "Download PDF",
+      "downloading": "Downloading...",
+      "downloadError": "Failed to download PDF.",
+      "close": "Close"
+    }
+  },
+  "myPlans": {
+    "pageTitle": "My Plans",
+    "pageSubtitle": "Meal and workout plans received from your specialists",
+    "activeSection": "Active",
+    "archivedSection": "Archived",
+    "archiveButton": "Archive",
+    "restoreButton": "Restore",
+    "emptyActive": "You haven't received any plans yet.",
+    "emptyArchived": "No archived plans.",
+    "loading": "Loading plans...",
+    "error": "Failed to load plans."
+  },
+  "sentPlans": {
+    "pageTitle": "Sent Plans",
+    "pageSubtitle": "Plans sent to your patients",
+    "activeSection": "Active",
+    "archivedSection": "Archived",
+    "archiveButton": "Archive",
+    "restoreButton": "Restore",
+    "emptyState": "You haven't sent any plans yet.",
+    "loading": "Loading plans...",
+    "error": "Failed to load plans."
+  },
+  "platform": {
+    "header": {
+      "sectionLabel": "THE PLATFORM",
+      "title": "HealthMonitor, in detail",
+      "intro": "A complete look at how the platform turns your lab analyses into useful information: the eight monitored conditions, the 26 analyzed markers, the verified specialist ecosystem, the technology behind it, and the cryptographic guarantees that protect your data."
+    },
+    "sidebar": {
+      "header": "Overview",
+      "conditions": "Conditions",
+      "markers": "Tests",
+      "specialists": "Specialists",
+      "technology": "Technology",
+      "security": "Security",
+      "mlAccuracy": "Accuracy"
+    },
+    "conditions": {
+      "sectionLabel": "MONITORED CONDITIONS",
+      "title": "Eight conditions. One single risk profile.",
+      "subtitle": "The platform simultaneously monitors the eight disease groups with the highest impact on adult population health. Every prediction is trained on public CDC datasets and validated against standard clinical metrics.",
+      "cardiovascular": {
+        "name": "Cardiovascular Risk",
+        "tag": "Heart & vessels",
+        "description": "Cardiovascular disease remains the leading cause of death globally, and also the most preventable. Your risk is computed via the Framingham 2008 score — the same one used by cardiologists worldwide — and captures the probability of a major cardiovascular event in the next 10 years. Early detection turns a predisposition into a risk you can manage through lifestyle change.",
+        "stat": "32% of global deaths are caused by cardiovascular disease (WHO, 2021)."
+      },
+      "diabetes": {
+        "name": "Diabetes",
+        "tag": "Glucose & insulin",
+        "description": "Type 2 diabetes develops slowly — often with years of asymptomatic 'prediabetes' before a diagnosis. Our model classifies you into three categories — healthy, borderline (prediabetes), and diabetic — to surface signals before the condition becomes irreversible. In early stages, reversibility is possible through dietary change.",
+        "stat": "1 in 10 adults globally has diabetes; nearly half don't know it (IDF Diabetes Atlas, 2021)."
+      },
+      "metabolicSyndrome": {
+        "name": "Metabolic Syndrome",
+        "tag": "Risk cluster",
+        "description": "Metabolic syndrome is a cluster of five factors — increased waist circumference, elevated glucose, high triglycerides, low HDL and high blood pressure — that together double cardiovascular risk. Diagnosis is made when at least three of five coexist, per the IDF / ATP III criteria.",
+        "stat": "Metabolic syndrome doubles the risk of cardiovascular events and increases all-cause mortality by over 50% (Mottillo et al., meta-analysis of 951,083 patients, 2010)."
+      },
+      "hepaticSteatosis": {
+        "name": "Hepatic Steatosis",
+        "tag": "Fatty liver",
+        "description": "Non-alcoholic fatty liver disease (NAFLD) is the accumulation of fat in the liver and often appears in people with normal or slightly elevated weight. In early stages it is completely asymptomatic and reversible, but untreated it can progress to inflammation, fibrosis and cirrhosis. Our model uses the Fatty Liver Index (FLI), clinically validated by Bedogni et al., 2006.",
+        "stat": "1 in 4 adults globally has NAFLD, but most are undiagnosed (Younossi et al., 2019)."
+      },
+      "ckd": {
+        "name": "Chronic Kidney Disease",
+        "tag": "Kidney function",
+        "description": "CKD is the progressive loss of kidney function and is one of the most silent conditions — over 80% of those affected don't know they have it. Our model calculates the glomerular filtration rate (eGFR) using the CKD-EPI 2021 formula, currently the most accurate in clinical use. Early intervention can significantly slow progression.",
+        "stat": "9 in 10 adults with chronic kidney disease are undiagnosed (CDC, 2023)."
+      },
+      "anemia": {
+        "name": "Anemia",
+        "tag": "Tissue oxygenation",
+        "description": "Anemia means fewer red blood cells or low hemoglobin — and therefore less oxygen delivered to tissues. Causes vary: iron deficiency, vitamin shortages, chronic blood loss, or hidden pathology. Our model applies the WHO 2011 thresholds, differentiated by sex, for an accurate diagnosis.",
+        "stat": "Approximately 1.8 billion people have anemia globally — over a quarter of the population (WHO, 2021)."
+      },
+      "hypertension": {
+        "name": "Hypertension",
+        "tag": "Blood pressure",
+        "description": "Hypertension is the 'silent killer' — often without symptoms, but causing stroke, heart attack and kidney failure. Only half of those affected are diagnosed, and only a quarter have controlled blood pressure. Early detection changes the entire trajectory of the disease.",
+        "stat": "1.28 billion adults globally have hypertension; 46% don't know they have it (WHO, 2023)."
+      },
+      "dyslipidemia": {
+        "name": "Dyslipidemia",
+        "tag": "Lipid profile",
+        "description": "Dyslipidemia is the imbalance of blood lipids — high LDL cholesterol, elevated triglycerides, or low HDL. It is the central factor in the atherogenesis that leads to heart attack and stroke, but responds exceptionally well to dietary change and to statins when indicated. Early detection is key.",
+        "stat": "39% of adults globally have elevated total cholesterol (WHO, 2023)."
+      }
+    },
+    "markers": {
+      "sectionLabel": "MONITORED TESTS",
+      "title": "26 tests. One complete picture.",
+      "subtitle": "All values are automatically extracted from your lab PDF — no manual entry. The 26 tests are organized into six clinical groups and cover the complete metabolic, cardiovascular, hepatic, renal and hematological spectrum in a complementary fashion.",
+      "groupCardiovascular": {
+        "title": "Cardiovascular",
+        "count": "8 markers",
+        "description": "How your heart and blood vessels function. Blood pressure, fractioned cholesterol, triglycerides and systemic inflammation (CRP) predict the risk of major cardiovascular events over a 10-year horizon."
+      },
+      "groupMetabolic": {
+        "title": "Metabolic",
+        "count": "5 markers",
+        "description": "How you process sugar, store energy and maintain hormonal balance. Glucose, HbA1c, waist circumference, UACR and vitamin D describe your long-term metabolic health."
+      },
+      "groupHepatic": {
+        "title": "Hepatic",
+        "count": "3 markers",
+        "description": "Liver health — the organ that metabolizes everything you eat, drink and breathe. ALT, AST and GGT are the enzymes that, when elevated, signal hepatic inflammation or fat accumulation."
+      },
+      "groupRenal": {
+        "title": "Renal",
+        "count": "3 markers",
+        "description": "Kidney function — the ability to clear waste products from your blood. Creatinine, urea and uric acid are the standardized indicators of glomerular filtration."
+      },
+      "groupHematological": {
+        "title": "Hematological",
+        "count": "4 markers",
+        "description": "Your blood in detail — red cells, iron and essential nutrients. Hemoglobin, MCV, ferritin and folate together describe oxygen-carrying capacity and hidden nutritional deficiencies."
+      },
+      "groupUniversal": {
+        "title": "General Profile",
+        "count": "3 elements",
+        "description": "The data that contextualizes everything else — age, biological sex and body mass index. Visible to all the specialists you work with and calibrated into every AI model."
+      },
+      "extractionNote": "Marker names shown in the cards come from the Synevo, Regina Maria and MedLife reporting standards."
+    },
+    "specialists": {
+      "sectionLabel": "SPECIALIST ECOSYSTEM",
+      "title": "Verified specialists. Clear roles.",
+      "subtitle": "Every specialist is manually verified by our team before they can interact with patients — through a transparent process similar to the one used by the Romanian Medical College.",
+      "verificationIntro": "The verification process varies by role: doctors are validated through the parafa code issued by the Romanian Medical College (CMR), nutritionists through their ONDR registration number, and personal trainers through ANEFS, NASM, ACE or ISSA certifications. All documents are reviewed individually by an administrator before an account is activated.",
+      "cardiologie": {
+        "name": "Cardiology",
+        "description": "The cardiologist monitors blood pressure, fractioned cholesterol, triglycerides, CRP and smoking status — all the factors that predict major cardiovascular events."
+      },
+      "endocrinologie": {
+        "name": "Endocrinology",
+        "description": "The endocrinologist tracks the complete metabolic profile — glucose, HbA1c, lipids, vitamin D, waist circumference — to detect diabetes, hormonal imbalances and metabolic syndrome."
+      },
+      "diabetNutritie": {
+        "name": "Diabetes, Nutrition & Metabolic Diseases",
+        "description": "The diabetes, nutrition and metabolic disease specialist is the meeting point between endocrinology and nutrition — coordinating therapeutic and nutritional plans for patients with prediabetes, diabetes and metabolic syndrome."
+      },
+      "gastroenterologie": {
+        "name": "Gastroenterology",
+        "description": "The gastroenterologist interprets liver enzymes (ALT, AST, GGT), triglycerides and ferritin to evaluate hepatic and digestive tract health."
+      },
+      "hepatologie": {
+        "name": "Hepatology",
+        "description": "The hepatologist focuses exclusively on the liver — managing hepatic steatosis, fibrosis and the evolution of ALT, AST, GGT, plus ferritin and UACR when associated metabolic pathology is present."
+      },
+      "nefrologie": {
+        "name": "Nephrology",
+        "description": "The nephrologist oversees renal function via creatinine, urea, uric acid, UACR and hemoglobin — calibrating treatment when the glomerular filtration rate declines."
+      },
+      "hematologie": {
+        "name": "Hematology",
+        "description": "The hematologist interprets hemoglobin, MCV, ferritin, folate and CRP to diagnose anemia, nutritional deficiencies and systemic inflammation."
+      },
+      "urologie": {
+        "name": "Urology",
+        "description": "The urologist has access to renal function (creatinine, urea, uric acid) and UACR to evaluate urinary tract pathology and monitor infections or kidney stones."
+      },
+      "medicinaInterna": {
+        "name": "Internal Medicine",
+        "description": "The internist has the broadest perspective — they see all 26 markers by default and act as a coordination point between organ specialties."
+      },
+      "nutritionist": {
+        "name": "Nutritionist",
+        "description": "The nutritionist accesses the complete metabolic and lipid profile — to build personalized meal plans that reflect biological reality, not just preferences."
+      },
+      "antrenor": {
+        "name": "Personal Trainer",
+        "description": "The personal trainer sees waist circumference and general vital parameters to calibrate training programs adapted to the trainee's cardiovascular profile."
+      }
+    },
+    "technology": {
+      "title1": "MEDICAL",
+      "title2": "TECHNOLOGY",
+      "subtitle": "Four technical pillars that make the platform unique: per-marker encryption, clinically-weighted scoring, mirror comparison graphs and the real-time ecosystem.",
+      "explore": "Explore the Architecture →",
+      "abeTitle": "A.B.E (Attribute-Based Encryption)",
+      "abeDesc": "Each of the 26 markers is encrypted individually under a mathematical policy that reflects the medical specializations that need it. Concretely: a cardiologist connected to your profile sees your cholesterol, triglycerides and CRP — but your kidney values remain mathematically inaccessible to their key. The CP-ABE scheme described by Bethencourt, Sahai and Waters (2007).",
+      "scoreTitle": "Clinically-Weighted Health Score",
+      "scoreDesc": "Not a flat average — cardiovascular risk weighs the most in the score because it is the leading cause of mortality. Each condition is weighted by clinical impact, following the logic of the Charlson Comorbidity Index (Charlson et al., 1987).",
+      "mirrorTitle": "Mirror Graphs",
+      "mirrorDesc": "Compare your June results with today's. See the exact trajectory of each marker over time and instantly identify whether your interventions — diet, exercise, medication — are actually working.",
+      "ecoTitle": "Live Multi-Role Ecosystem",
+      "ecoDesc": "When the A.I. detects a critical threshold — glucose above 250, HbA1c above 9.5 — your connected specialists receive an instant alert in their dashboard, even when they're working in a different tab.",
+      "chatMsg1": "Glucose is down! Great progress on the new diet.",
+      "chatMsg2": "Thanks! Shall we keep the plan?"
+    },
+    "security": {
+      "sectionLabel": "SECURITY THROUGH CRYPTOGRAPHY",
+      "title1": "CRYPTOGRAPHY,",
+      "title2": "NOT PROMISES",
+      "subtitle": "The difference between a promise that your data is safe and a mathematical guarantee that cannot be cheated.",
+      "block1Title": "The problem with traditional systems",
+      "block1Body": "Traditional medical platforms store your data in a database and control access through software rules. A misconfigured permission, a compromised administrator account, or a legal subpoena can expose all your records. The data is visible — security is just a locked door.",
+      "block2Title": "How CP-ABE is different",
+      "block2Body": "With Ciphertext-Policy Attribute-Based Encryption, each medical value becomes unreadable text without the correct mathematical key. The key is indissolubly bound to the doctor's role (for example, the 'cardiologist' specialization) and their specific relationship with you as a patient. Neither the platform administrator, nor an attacker with full database access, can read the data without a valid key.",
+      "block3Title": "The consent flow, explained",
+      "block3Intro": "Here's what happens when your cardiologist needs to see your kidney markers:",
+      "block3Step1": "The doctor sends a request listing the markers they need and a written justification (between 20 and 1000 characters).",
+      "block3Step2": "You receive the request directly in the platform's chat and read the concrete reason — not a generic prompt.",
+      "block3Step3": "You approve the specific markers you want to unlock — check one, two, or ten — exactly the number you choose.",
+      "block3Step4": "The system re-issues an updated cryptographic key, valid ONLY for your profile and ONLY for the markers you approved.",
+      "block3Step5": "If you revoke the relationship with the doctor, their key becomes instantly invalid — with no further action from you. The markers become mathematically inaccessible again.",
+      "block4Title": "Traditional system vs HealthMonitor",
+      "block4ColTraditional": "Traditional System",
+      "block4ColHealthMonitor": "HealthMonitor",
+      "block4Row1Label": "Access control",
+      "block4Row1Traditional": "Software rules (IAM, ACL, DB permissions)",
+      "block4Row1HealthMonitor": "Per-field cryptography (CP-ABE)",
+      "block4Row2Label": "Breach impact",
+      "block4Row2Traditional": "All data exposed in plaintext",
+      "block4Row2HealthMonitor": "Data remains encrypted, useless without the key",
+      "block4Row3Label": "Consent granularity",
+      "block4Row3Traditional": "All-or-nothing, per record",
+      "block4Row3HealthMonitor": "Per individual marker (up to 26 distinct decisions)",
+      "block4Row4Label": "Access revocation",
+      "block4Row4Traditional": "Requires DB deletion / update",
+      "block4Row4HealthMonitor": "Key invalidates instantly (revoked_at timestamp)"
+    },
+    "mlAccuracy": {
+      "sectionLabel": "ACCURACY & TRUST",
+      "title1": "TRAINED ON REAL DATA.",
+      "title2": "CLINICALLY VALIDATED.",
+      "subtitle": "AI models are powerful tools only when trained on accurate, representative and publicly verifiable data.",
+      "nhanesTitle": "NHANES — our data source",
+      "nhanesBody": "The National Health and Nutrition Examination Survey is the US population health surveillance program run by the CDC (Centers for Disease Control and Prevention). For over 60 years, NHANES has measured clinical, demographic and nutritional parameters on representative samples — fully public, reproducible data. Our models use four consecutive cycles (2013–2014, 2015–2016, 2017–2018, 2019–2020) and approximately 11,400 adult patients with complete profiles across 26 markers.",
+      "modelBTitle": "Why we exclude the diagnostic marker",
+      "modelBBody": "An A.I. model that sees the HbA1c value and predicts diabetes is clinically irrelevant — any physician would reach the same diagnosis from the same data. Our production model is trained without seeing the marker that defines the disease — it learns from adjacent risk factors: weight, age, lipid profile, vitamin D, lifestyle. This is real early detection — we identify the risk before the diagnostic marker itself changes. The accuracy below is on Model B, the honest model.",
+      "treesNote": "For tabular clinical data, tree-based models (XGBoost, Random Forest) still outperform deep neural networks (Grinsztajn et al., NeurIPS 2022). That informs our technical choice.",
+      "accuracyTitle": "Model performance — AUC-ROC on Model B",
+      "accuracyMetricLabel": "AUC-ROC",
+      "accuracyCardiovascular": "96.9%",
+      "accuracyCardiovascularLabel": "Cardiovascular Risk",
+      "accuracyHepaticSteatosis": "95.5%",
+      "accuracyHepaticSteatosisLabel": "Hepatic Steatosis",
+      "accuracyCkd": "96.3%",
+      "accuracyCkdLabel": "Chronic Kidney Disease",
+      "accuracyAnemia": "90.2%",
+      "accuracyAnemiaLabel": "Anemia",
+      "accuracyMetabolicSyndrome": "88.8%",
+      "accuracyMetabolicSyndromeLabel": "Metabolic Syndrome",
+      "accuracyHypertension": "86.2%",
+      "accuracyHypertensionLabel": "Hypertension",
+      "accuracyDyslipidemia": "82.3%",
+      "accuracyDyslipidemiaLabel": "Dyslipidemia",
+      "accuracyDiabetesNote": "Diabetes — F1-macro 0.63 (three-class model: Healthy / Borderline / Diabetic; different metric from binary AUC)",
+      "disclaimerTitle": "Medical disclaimer",
+      "disclaimerBody": "HealthMonitor is a Clinical Decision Support tool, designed to help you understand your tests and support your conversations with your specialist. It is NOT a diagnostic tool. The results generated by AI algorithms are advisory and do NOT replace licensed medical consultation, clinical diagnosis, or treatment prescribed by a physician. In accordance with Romanian Law no. 46/2003 on patient rights, therapeutic decisions remain exclusively the responsibility of your treating physician."
+    }
+  },
+  "landing": {
+    "hero": {
+      "title1": "TRANSFORM",
+      "title2": "DATA INTO",
+      "title3": "HEALTH",
+      "subtitle": "We automatically extract values from your lab PDFs, run them through 8 AI models trained on <1>11,400 real patients</1>, and deliver them directly to your doctor, nutritionist or coach — in a single platform encrypted field by field.",
+      "startAnalysis": "START ANALYSIS",
+      "howItWorks": "SEE HOW IT WORKS",
+      "aiPrediction": "A.I. PREDICTION",
+      "accuracy": "96.9% AUC-ROC",
+      "cvRisk": "Cardiovascular Risk",
+      "cvRiskLow": "LOW",
+      "healthScore": "Health Score",
+      "diabetesRisk": "Diabetes Risk",
+      "diabetesRiskValue": "BORDERLINE",
+      "poweredBy": "Trained on NHANES 2013–2020 · CDC public data · 11,400 patients · 26 clinical markers"
+    },
+    "howItWorks": {
+      "sectionSuperTitle": "HOW",
+      "sectionSuperTitleBold": "IT WORKS",
+      "sectionSubtitle": "Three steps — from the PDF on your desk to a personalized plan you can follow.",
+      "step1Title": "UPLOAD",
+      "step1Sub": "Automatic ingestion",
+      "step1Desc": "Drop in your PDF from Synevo, Regina Maria, MedLife or any other lab. The system reads the tables on its own, identifies all 26 clinical markers and maps them into your profile. If a test is missing, you fill it in through a form that mirrors your printed report. No retyping dozens of numbers, no transcription errors.",
+      "step2Title": "UNDERSTAND",
+      "step2Sub": "Full A.I. analysis",
+      "step2Desc": "Eight AI models (XGBoost and Random Forest) evaluate your risk in parallel across eight major condition groups — cardiovascular, metabolic, hepatic, renal, hematological. Missing values are statistically estimated via MICE imputation, the same method used in landmark epidemiological studies. All predictions converge into a single clinically-weighted Health Score — not a flat average, but a sum where cardiovascular risk carries the heaviest weight.",
+      "step3Title": "ACT",
+      "step3Sub": "Connected ecosystem",
+      "step3Desc": "Connect with your doctor, nutritionist or coach — all manually verified via Romanian Medical College parafa code, ONDR registry number, or sports certifications. Real-time chat brings your specialist one click away. When the A.I. detects a critical signal — glucose above 250, HbA1c above 9.5 — your specialist gets an instant alert, even if they're on a different page. Get personalized plans delivered straight into the platform."
+    },
+    "mlAccuracyTeaser": {
+      "sectionLabel": "ACCURACY & TRUST",
+      "title": "Validated on real data, not on promises.",
+      "aucValue": "82.3% – 96.9%",
+      "aucLabel": "Model accuracy (AUC)",
+      "disclaimerShort": "Range across 7 conditions. Validated on NHANES.",
+      "viewMethodologyCta": "View full methodology →"
+    },
+    "cta": {
+      "sectionLabel": "START TODAY",
+      "title": "Two paths, one goal.",
+      "patientLabel": "FOR PATIENTS",
+      "patientHeadline": "Your data, understood.",
+      "patientBody": "Upload your first lab PDF in under a minute. Instantly receive a clinically-weighted Health Score, eight A.I. predictions and a historical chart of every marker. All data stays mathematically encrypted — even we, as the operator, cannot read your values without your authorization.",
+      "patientCta": "START ANALYSIS",
+      "specialistLabel": "FOR SPECIALISTS",
+      "specialistHeadline": "Your patients, in context.",
+      "specialistBody": "Sign up with your CMR parafa code, ONDR registration number or coach certification. After our administrator verifies your documents, you gain access to records of patients who have invited you — exactly to the markers relevant for your specialization. Request extended access through chat when there is a real clinical need.",
+      "specialistCta": "REGISTER AS SPECIALIST"
+    }
+  }
+}

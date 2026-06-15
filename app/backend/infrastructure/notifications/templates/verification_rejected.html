@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Înregistrare respinsă — HealthMonitor</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f5f4f2;font-family:Inter,Arial,sans-serif;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f4f2;padding:40px 0;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#2e3d24;padding:32px 40px;text-align:center;">
+              <span style="font-family:Arial,sans-serif;font-size:24px;font-weight:700;color:#F7E7CE;letter-spacing:2px;">HealthMonitor</span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="background-color:#ffffff;padding:40px;">
+
+              <p style="margin:0 0 8px 0;font-size:20px;font-weight:600;color:#2e3d24;">
+                Bună ziua, {{ first_name }}!
+              </p>
+
+              <p style="margin:16px 0;font-size:15px;line-height:1.6;color:#444444;">
+                Înregistrarea ta ca specialist pe platforma <strong>HealthMonitor</strong>
+                <strong style="color:#C17C74;">nu a putut fi aprobată</strong> în urma verificării documentelor transmise.
+              </p>
+
+              <!-- Rejection reason box -->
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0;">
+                <tr>
+                  <td style="background-color:#fdf4f4;border-left:4px solid #C17C74;border-radius:4px;padding:16px 20px;">
+                    <p style="margin:0 0 6px 0;font-size:12px;font-weight:600;color:#C17C74;text-transform:uppercase;letter-spacing:0.8px;">
+                      Motiv
+                    </p>
+                    <p style="margin:0;font-size:14px;line-height:1.6;color:#444444;">
+                      {{ reason }}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:16px 0;font-size:15px;line-height:1.6;color:#444444;">
+                Poți accesa platforma pentru a consulta motivul complet și pentru a retrimite o cerere corectată
+                cu documentele actualizate.
+              </p>
+
+              <p style="margin:24px 0;text-align:center;">
+                <a href="http://localhost:5173/login"
+                   style="display:inline-block;background-color:#2e3d24;color:#F7E7CE;text-decoration:none;
+                          font-size:15px;font-weight:600;padding:14px 32px;border-radius:8px;letter-spacing:0.5px;">
+                  Accesează platforma
+                </a>
+              </p>
+
+              <p style="margin:24px 0 0 0;font-size:13px;line-height:1.6;color:#aaaaaa;">
+                Dacă butonul nu funcționează, accesează:
+                <a href="http://localhost:5173/login" style="color:#397367;">http://localhost:5173/login</a>
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#F7E7CE;padding:20px 40px;text-align:center;">
+              <p style="margin:0;font-size:12px;color:#2e3d24;">
+                Acest email a fost trimis automat de platforma HealthMonitor. Te rugăm să nu răspunzi la acest mesaj.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- Plain-text fallback for clients that cannot render HTML -->
+        <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-top:20px;">
+          <tr>
+            <td style="font-size:12px;color:#aaaaaa;text-align:center;line-height:1.6;padding:0 20px;">
+              Dacă nu poți vizualiza acest email, versiunea text:
+              Bună ziua {{ first_name }}, înregistrarea ta HealthMonitor nu a fost aprobată.
+              Motiv: {{ reason }}
+              Accesează platforma la: http://localhost:5173/login
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

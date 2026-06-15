@@ -1,0 +1,30 @@
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Logs
+*.log
+
+# Local database artifacts (e.g. legacy SQLite); production DB is PostgreSQL
+*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Uploaded files (local storage)
+uploads/
+
+# ABE master keys — never commit
+abe_keys/

@@ -1,0 +1,1264 @@
+{
+  "navbar": {
+    "workflow": "CUM FUNCȚIONEAZĂ",
+    "platform": "PLATFORMA",
+    "security": "SECURITATE",
+    "login": "AUTENTIFICARE",
+    "register": "ÎNCEPE ACUM"
+  },
+  "register": {
+    "title": "Creare Cont",
+    "subtitleStep1": "Pasul 1: Selectează rolul și setează datele de acces",
+    "subtitleStep2": "Pasul 2: Date personale",
+    "subtitleStep3": "Pasul 3: Document de Verificare",
+    "haveAccount": "Ai deja un cont?",
+    "loginLink": "Autentifică-te aici",
+    "role": {
+      "label": "Tip Cont",
+      "patient": "Pacient",
+      "specialist": "Specialist"
+    },
+    "fields": {
+      "email": "Adresa Email",
+      "password": "Parolă",
+      "confirmPassword": "Confirmă Parola",
+      "firstName": "Prenume",
+      "lastName": "Nume",
+      "dateOfBirth": "Data Nașterii",
+      "sex": "Sex Biologic",
+      "specialization": "Specializare",
+      "licenseNumber": "Cod Parafă / Licență",
+      "clinic": "Clinică / Afiliere",
+      "codParafa": "Cod Parafă",
+      "unitateSanitara": "Unitate Sanitară",
+      "numarOndr": "Număr ONDR",
+      "institutieAbsolvire": "Instituție Absolvire",
+      "tipCertificare": "Tip Certificare",
+      "numarCertificare": "Număr Certificare"
+    },
+    "tipCertificare": {
+      "placeholder": "Selectează tipul",
+      "ANEFS": "ANEFS (Academia Națională de Educație Fizică și Sport)",
+      "NASM": "NASM (National Academy of Sports Medicine)",
+      "ACE": "ACE (American Council on Exercise)",
+      "ISSA": "ISSA (International Sports Sciences Association)",
+      "ALTELE": "Altele"
+    },
+    "params": {
+      "male": "Masculin",
+      "female": "Feminin"
+    },
+    "subrole": {
+      "label": "Tip Specialist",
+      "doctor": "Medic",
+      "nutritionist": "Nutriționist",
+      "coach": "Antrenor"
+    },
+    "placeholders": {
+      "optional": "Opțional",
+      "specialization": "Selectează specializarea"
+    },
+    "buttons": {
+      "next": "Pasul Următor",
+      "submit": "Înregistrează-te",
+      "loading": "Se procesează..."
+    },
+    "errors": {
+      "missingFields": "Te rugăm să completezi toate câmpurile obligatorii.",
+      "passwordMismatch": "Parolele nu coincid.",
+      "passwordLength": "Parola trebuie să aibă minim 8 caractere."
+    },
+    "success": {
+      "title": "Înregistrare cu Succes",
+      "message": "Contul tău a fost creat cu succes. Te poți autentifica acum.",
+      "loginButton": "Mergi la Autentificare"
+    },
+    "docUpload": {
+      "title": "Încarcă Document de Verificare",
+      "description": "Încarcă o copie a documentului care atestă calificările tale profesionale (licență, certificat, atestat). Format acceptat: PDF, JPEG sau PNG.",
+      "dragDrop": "Trage fișierul aici sau click pentru a selecta",
+      "fileLimits": "PDF, JPEG sau PNG · max 10 MB",
+      "uploadButton": "Încarcă Document",
+      "uploadLoading": "Se încarcă...",
+      "uploadSuccess": "Document încărcat cu succes",
+      "continueButton": "Continuă",
+      "skipButton": "Sari peste (poți trimite mai târziu)",
+      "errors": {
+        "invalidType": "Tip de fișier invalid. Sunt acceptate PDF, JPEG și PNG.",
+        "fileTooLarge": "Fișierul depășește limita de 10 MB.",
+        "uploadFailed": "Eroare la încărcarea documentului. Încearcă din nou."
+      }
+    },
+    "verificationPending": {
+      "title": "Cerere Trimisă",
+      "message": "Contul tău a fost creat cu succes. Echipa noastră va verifica documentele tale și te va notifica prin email în cel mai scurt timp.",
+      "loginButton": "Mergi la Autentificare"
+    }
+  },
+  "login": {
+    "title": "Bine ai Revenit",
+    "subtitle": "Autentifică-te pentru a accesa panoul tău de sănătate",
+    "fields": {
+      "email": "Adresa Email",
+      "password": "Parolă"
+    },
+    "buttons": {
+      "submit": "Autentificare",
+      "loading": "Se autentifică..."
+    },
+    "errors": {
+      "missingFields": "Te rugăm să introduci emailul și parola."
+    },
+    "noAccount": "Nu ai un cont?",
+    "registerLink": "Creează unul aici"
+  },
+  "footer": {
+    "slogan": "Puterea datelor tale, controlată cu precizie.",
+    "contact": "CONTACT",
+    "copyright": "2026 © HEALTH MONITOR PLATFORM"
+  },
+  "records": {
+    "title": "Adaugă Analize",
+    "subtitle": "Completează manual câmpurile sau încarcă un buletin de analize în format PDF.",
+    "tabManual": "Introducere Manuală",
+    "tabPdf": "Încărcare PDF",
+    "generalInfo": "Informații Generale",
+    "date": "Data Recoltării",
+    "biometrics": "Date Biometrice & Vitale",
+    "sexLabel": "Sex Biologic",
+    "sexNone": "Nedefinit",
+    "sexMale": "Masculin",
+    "sexFemale": "Feminin",
+    "age": "Vârsta (ani)",
+    "waist": "Circumferința Abdominală (cm)",
+    "smokerLabel": "Fumător",
+    "smokerNo": "Nu",
+    "smokerYes": "Da",
+    "systolic": "Tensiune Sistolică (mmHg)",
+    "diastolic": "Tensiune Diastolică (mmHg)",
+    "glucoseLipids": "Glicemie & Lipide",
+    "fastingGlucose": "Glicemie Fasting (mg/dL)",
+    "totalCholesterol": "Colesterol Total (mg/dL)",
+    "triglycerides": "Trigliceride (mg/dL)",
+    "liverInflammation": "Ficat & Inflamație",
+    "kidneyFunction": "Funcție Renală",
+    "creatinine": "Creatinină (mg/dL)",
+    "urea": "Uree (mg/dL)",
+    "uacr": "UACR (Raport Albumină/Creatinină)",
+    "uricAcid": "Acid Uric (mg/dL)",
+    "hematology": "Hematologie & Nutriție",
+    "hemoglobin": "Hemoglobină (g/dL)",
+    "ferritin": "Feritină (ng/mL)",
+    "vitaminD": "Vitamina D (ng/mL)",
+    "folate": "Folat (ng/mL)",
+    "hba1c": "HbA1c (%)",
+    "bmi": "BMI (Indice Masă Corporală)",
+    "hdl": "HDL Colesterol",
+    "ldl": "LDL Colesterol",
+    "alt": "ALT (TGP)",
+    "ast": "AST (TGO)",
+    "ggt": "GGT",
+    "crp": "CRP (Proteina C Reactivă)",
+    "mcv": "MCV",
+    "saveLoading": "Se salvează...",
+    "saveButton": "Salvează Analizele",
+    "minimumFieldsRequired": "Vârsta și sexul sunt câmpuri obligatorii pentru analiza ML.",
+    "lowDataWarning": "Ai completat {{count}} din 26 câmpuri. Adaugă mai multe date pentru rezultate mai precise.",
+    "completenessEncouragement": "Cu cât completezi mai mulți markeri, cu atât predicțiile ML vor fi mai precise.",
+    "completenessLow": "Acoperire scăzută",
+    "completenessModerate": "Acoperire moderată",
+    "completenessGood": "Acoperire bună",
+    "uploadTitle": "Încarcă Fișier PDF",
+    "dragDrop": "Trage fișierul aici sau click pentru a selecta",
+    "dragDropHover": "Lasă fișierul aici",
+    "fileLimits": "Doar fișiere PDF, maxim 10 MB",
+    "uploadLoading": "Se încarcă...",
+    "uploadButton": "Încarcă Documentul",
+    "deleteFile": "Șterge fișier",
+    "errors": {
+      "saveFailed": "A apărut o eroare la salvarea analizelor. Verifică datele introduse.",
+      "uploadFailed": "A apărut o eroare la încărcarea fișierului.",
+      "invalidType": "Doar fișiere PDF sunt acceptate.",
+      "fileTooLarge": "Fișierul este prea mare. Limita este de 10 MB."
+    },
+    "success": {
+      "parsed": "Fișierul a fost analizat cu succes! Te rugăm să verifici datele extrase înainte de a le salva definitiv."
+    },
+    "markersLocked": "Markeri blocați",
+    "markersLockedHint": "Marker criptat — apasă pentru a solicita acces",
+    "markersAccess": "Acces markeri",
+    "markerDecrypted": "Decriptat",
+    "markerLocked": "Blocat",
+    "requestAccessCta": "Solicită acces la markeri blocați"
+  },
+  "patientDashboard": {
+    "welcome": "Bine ai venit, {{name}}!",
+    "welcomeFallback": "Pacient",
+    "subtitle": "Aici vei vedea scorul tău general de sănătate și vei putea urca documente.",
+    "healthScore": "Health Score Indicator",
+    "alerts": "Alerte Medicale",
+    "addRecords": "Adaugă Analize",
+    "addRecordsSub": "Completare manuală sau PDF Upload",
+    "loading": "Se încarcă datele...",
+    "abeStatus": "Datele tale sunt criptate",
+    "abeStatusDetail": "Markerii sunt securizați cu criptare ABE",
+    "abeShieldLabel": "Status securitate ABE"
+  },
+  "predictions": {
+    "title": "Rezultate Predicție ML",
+    "subtitle": "Modele AI • v1.0-ModelB",
+    "loading": {
+      "title": "Se Procesează",
+      "description": "Aplicația noastră analizează datele dumneavoastră, răspunsul va fi imediat."
+    },
+    "error": {
+      "title": "Eroare de analiză",
+      "defaultMsg": "Date indisponibile.",
+      "notFoundMsg": "Nu există încă o predicție pentru această înregistrare.",
+      "retryButton": "Generează predicția",
+      "backButton": "Înapoi la Dashboard"
+    },
+    "healthScore": {
+      "title": "Health Score",
+      "description": "Scorul este agregat folosind algoritmii noștri de analiză pentru 8 condiții medicale majore. Un scor ridicat indică un risc global redus."
+    },
+    "conditions": {
+      "risc_cardiovascular": "Risc Cardiovascular",
+      "steatoza_hepatica": "Steatoză Hepatică",
+      "boala_renala": "Boală Renală",
+      "anemie": "Anemie",
+      "sindrom_metabolic": "Sindrom Metabolic",
+      "hipertensiune": "Hipertensiune",
+      "dislipidemie": "Dislipidemie",
+      "diabet": "Diabet"
+    },
+    "classes": {
+      "anemie": { "0": "Hemoglobină Normală", "1": "Anemie" },
+      "boala_renala": { "0": "Rinichi Sănătos", "1": "Boală Renală" },
+      "diabet": { "0": "Glicemie Normală", "1": "Prediabet", "2": "Diabet" },
+      "dislipidemie": { "0": "Lipide Normale", "1": "Dislipidemie" },
+      "hipertensiune": { "0": "Tensiune Normală", "1": "Hipertensiune" },
+      "risc_cardiovascular": { "0": "Risc Scăzut", "1": "Risc Crescut" },
+      "sindrom_metabolic": { "0": "Fără Sindrom Metabolic", "1": "Sindrom Metabolic" },
+      "steatoza_hepatica": { "0": "Ficat Sănătos", "1": "Steatoză Hepatică" },
+      "default": "Necunoscut"
+    },
+    "modelB": "Screening — Profil Metabolic",
+    "modelA": "Confirmat — Marker Diagnostic Prezent",
+    "downloadReport": "Descarcă Raport PDF",
+    "downloadError": "Eroare la generarea raportului. Încearcă din nou.",
+    "completenessLow": "Calitate scăzută a datelor: doar {{count}}/{{total}} markeri furnizați. Rezultatele pot fi nesigure.",
+    "completenessMedium": "Acoperire moderată: {{count}}/{{total}} markeri furnizați. Adaugă mai multe date pentru precizie mai bună."
+  },
+  "trendChart": {
+    "title": "Evoluție Analize",
+    "subtitle": "Monitorizare în timp",
+    "value": "Valoare",
+    "noData": "Nu există date suficiente pentru marker-ul selectat."
+  },
+  "patientHistory": {
+    "backToDashboard": "Înapoi la Dashboard",
+    "title": "Istoric Complet",
+    "subtitle": "Urmărește evoluția indicatorilor și scorurilor tale de-a lungul timpului.",
+    "loading": "Se încarcă istoricul...",
+    "historyButton": "Istoric Complet",
+    "tabPredictions": "Predicții ML",
+    "tabMarkers": "Markeri Bruti",
+    "needTwoRecords": "Ai nevoie de cel puțin 2 înregistrări pentru a compara markerii.",
+    "selectRecord": "Înregistrare",
+    "uploadedAt": "încărcat {{date}}",
+    "noRecordsYet": "Nu există înregistrări. Încarcă un PDF de laborator sau adaugă o înregistrare manuală pentru a începe.",
+    "noMarkersInRecord": "Această înregistrare nu conține markeri.",
+    "colMarker": "Marker",
+    "colValue": "Valoare",
+    "colReference": "Referință",
+    "colStatus": "Status",
+    "statusOk": "În Normă",
+    "statusFlag": "Depășit"
+  },
+  "recordDetail": {
+    "backToHistory": "Înapoi la Istoric",
+    "backToPatientSheet": "Înapoi la Fișa Pacientului",
+    "sourcePdf": "PDF Încărcat",
+    "sourceManual": "Intrare Manuală",
+    "uploadedAt": "încărcat {{date}}",
+    "loading": "Se încarcă înregistrarea...",
+    "notFound": "Înregistrarea nu a fost găsită.",
+    "noAccess": "Nu ai acces la această înregistrare.",
+    "requestAccessCta": "Solicită acces la markeri",
+    "viewOriginalPdf": "Vezi documentul original"
+  },
+  "timeline": {
+    "title": "Istoric Medical",
+    "subtitle": "Toate analizele și scorurile tale",
+    "noPrediction": "Fără predicție",
+    "noRecords": "Niciun set de analize găsit.",
+    "healthScore": "Health Score",
+    "viewDetails": "Vezi rezultate detaliate",
+    "drawerTitle": "Detalii Înregistrare",
+    "viewFullResults": "Vezi Rezultate Complete",
+    "riskSummary": "Sumar Riscuri",
+    "rawMarkers": "Markeri Bruti",
+    "sourcePdf": "PDF Upload",
+    "sourceManual": "Manual",
+    "uploadedAt": "încărcat {{date}}"
+  },
+  "sidebar": {
+    "home": "Acasă",
+    "history": "Istoric Medical",
+    "compare": "Comparare Analize",
+    "logout": "Deconectare",
+    "memberFallback": "Membru",
+    "myPatients": "Pacienții Mei",
+    "myProfile": "Profilul Meu",
+    "requests": "Cereri",
+    "mySpecialists": "Specialiștii Mei",
+    "messages": "Mesaje",
+    "myPlans": "Planurile Mele",
+    "sentPlans": "Planuri Trimise"
+  },
+  "comparePage": {
+    "title": "Comparare Analize",
+    "subtitle": "Vezi evoluția indicatorilor tăi punând față în față două seturi diferite de analize.",
+    "selectRecordA": "Alege primul set de analize",
+    "selectRecordB": "Alege al doilea set de analize",
+    "loading": "Se încarcă datele...",
+    "noRecords": "Nu există suficiente analize pentru a face o comparație.",
+    "insufficientTitle": "Informații insuficiente",
+    "addRecordsLink": "Adaugă un set nou de analize",
+    "markersComparison": "Comparație Markeri",
+    "marker": "Marker",
+    "recordA": "Set A",
+    "recordB": "Set B",
+    "uploadedAt": "încărcat {{date}}",
+    "difference": "Diferență",
+    "standard": "Standard",
+    "backToDashboard": "Înapoi la Dashboard",
+    "infoText1": "Pentru o comparație optimă, ",
+    "infoTextBold": "Setul A (Stânga) va reprezenta întotdeauna cele mai recente analize",
+    "infoText2": ". Dacă selectezi un set mai nou în dreapta, sistemul le va inversa automat.",
+    "legendTitle": "Legendă Culori",
+    "legendPositive": "Evoluție pozitivă (trend spre valorile optime)",
+    "legendNegative": "Evoluție negativă (trend de îndepărtare de valorile optime)",
+    "legendNeutral": "Valoare staționară sau marker fără standard clinic definit",
+    "legendNote": "Notă: Diferența este calculată matematic (A - B), iar culorile reflectă impactul clinic pe baza coloanei Standard."
+  },
+  "specialistDashboard": {
+    "welcome": "Bine ai venit, {{name}}!",
+    "welcomeFallback": "Specialist",
+    "subtitle": "Gestionează pacienții și cererile tale din panoul de control.",
+    "loading": "Se încarcă...",
+    "kpi": {
+      "activePatients": "Pacienți Activi",
+      "pendingRequests": "Cereri în Așteptare",
+      "redFlags": "Alerte Active"
+    },
+    "patientTable": {
+      "title": "Pacienții Mei",
+      "name": "Nume",
+      "sex": "Sex",
+      "age": "Vârstă",
+      "healthScore": "Health Score",
+      "testDate": "Data Analizei",
+      "uploadedAt": "încărcat {{date}}",
+      "redFlags": "Alerte",
+      "actions": "Acțiuni",
+      "view": "Vizualizează",
+      "chat": "Chat",
+      "empty": "Niciun pacient activ momentan.",
+      "na": "N/A",
+      "sexMale": "M",
+      "sexFemale": "F"
+    },
+    "requestInbox": {
+      "title": "Cereri de Conectare",
+      "empty": "Nicio cerere de conectare în așteptare.",
+      "from": "De la",
+      "approve": "Aprobă",
+      "reject": "Respinge",
+      "approveError": "Eroare la aprobarea cererii.",
+      "rejectError": "Eroare la respingerea cererii."
+    },
+    "specialization": {
+      "CARDIOLOGIE": "Cardiologie",
+      "ENDOCRINOLOGIE": "Endocrinologie",
+      "DIABET_NUTRITIE_BOLI_METABOLICE": "Diabet, Nutriție și Boli Metabolice",
+      "GASTROENTEROLOGIE": "Gastroenterologie",
+      "HEPATOLOGIE": "Hepatologie",
+      "NEFROLOGIE": "Nefrologie",
+      "HEMATOLOGIE": "Hematologie",
+      "MEDICINA_INTERNA": "Medicină Internă",
+      "UROLOGIE": "Urologie",
+      "NUTRITIONIST": "Nutriționist",
+      "COACH": "Antrenor Personal",
+      "ALTA": "Altă Specializare"
+    }
+  },
+  "relations": {
+    "status": {
+      "PENDING": "În Așteptare",
+      "APPROVED": "Aprobat",
+      "REJECTED": "Respins",
+      "REVOKED": "Revocat"
+    },
+    "requestSent": "Cerere de conectare trimisă.",
+    "requestError": "Eroare la trimiterea cererii.",
+    "approveSuccess": "Cerere aprobată.",
+    "rejectSuccess": "Cerere respinsă.",
+    "revokeSuccess": "Conexiune revocată.",
+    "cancelSuccess": "Cerere anulată.",
+    "actionError": "Eroare la procesarea acțiunii."
+  },
+  "redFlags": {
+    "risc_cardiovascular": "Risc Cardiovascular",
+    "steatoza_hepatica": "Steatoză Hepatică",
+    "boala_renala": "Boală Renală",
+    "anemie": "Anemie",
+    "sindrom_metabolic": "Sindrom Metabolic",
+    "hipertensiune": "Hipertensiune",
+    "dislipidemie": "Dislipidemie",
+    "diabet": "Diabet",
+    "unknown": "Alertă"
+  },
+  "mySpecialists": {
+    "title": "Specialiștii Mei",
+    "subtitle": "Caută și conectează-te cu specialiști medicali.",
+    "loading": "Se încarcă...",
+    "search": {
+      "title": "Caută Specialist",
+      "namePlaceholder": "Caută după nume...",
+      "specializationLabel": "Specializare",
+      "allSpecializations": "Toate Specializările",
+      "button": "Caută",
+      "noResults": "Niciun specialist găsit.",
+      "requestButton": "Trimite Cerere",
+      "requestPending": "Cerere Trimisă",
+      "requestApproved": "Conectat"
+    },
+    "active": {
+      "title": "Specialiști Activi",
+      "empty": "Nu ești conectat cu niciun specialist.",
+      "chatButton": "Chat",
+      "revokeButton": "Deconectează",
+      "revokeTitle": "Deconectează Specialist",
+      "revokeConfirm": "Ești sigur că vrei să deconectezi acest specialist?"
+    },
+    "pending": {
+      "title": "Cereri Trimise",
+      "empty": "Nicio cerere în așteptare.",
+      "cancelButton": "Anulează"
+    }
+  },
+  "patientSheet": {
+    "title": "Fișă Medicală",
+    "loading": "Se încarcă fișa pacientului...",
+    "noAccess": "Acces Refuzat",
+    "noAccessDesc": "Nu ai o relație activă cu acest pacient.",
+    "back": "Înapoi",
+    "chat": "Deschide conversație",
+    "trendTitle": "Evoluție Markeri",
+    "timelineTitle": "Cronologie Medicală",
+    "markersTitle": "Valori Brute"
+  },
+  "confirmModal": {
+    "confirm": "Confirmă",
+    "cancel": "Anulează"
+  },
+  "specialistPatients": {
+    "title": "Pacienții Mei",
+    "subtitle": "Lista completă a pacienților cu acces activ.",
+    "searchPlaceholder": "Caută după nume...",
+    "filterAll": "Toți Pacienții",
+    "filterAlerts": "Numai Alerte",
+    "empty": "Niciun pacient activ momentan.",
+    "emptyAlerts": "Niciun pacient cu alerte active."
+  },
+  "specialistHome": {
+    "recentPatients": {
+      "title": "Pacienți Recenți",
+      "viewAll": "Vezi Toți Pacienții",
+      "empty": "Niciun pacient activ momentan."
+    },
+    "recentRequests": {
+      "title": "Cereri în Așteptare",
+      "viewAll": "Vezi Toate Cererile",
+      "empty": "Nicio cerere în așteptare."
+    },
+    "mealPlanCard": {
+      "title": "Constructor de Planuri Alimentare",
+      "description": "Trimite planuri alimentare personalizate pacienților tăi direct prin chat.",
+      "cta": "Mesaje"
+    },
+    "workoutPlanCard": {
+      "title": "Constructor de Planuri de Antrenament",
+      "description": "Trimite planuri de antrenament personalizate pacienților tăi direct prin chat.",
+      "cta": "Mesaje"
+    }
+  },
+  "adminDashboard": {
+    "welcome": "Bine ai venit, {{name}}!",
+    "subtitle": "Panou de Administrare",
+    "errorLoad": "Eroare la încărcarea statisticilor.",
+    "kpi": {
+      "patients": "Pacienți",
+      "doctors": "Medici",
+      "nutritionistsCoaches": "Nutriționiști & Antrenori",
+      "pendingVerifications": "Cereri în Așteptare"
+    },
+    "stats": {
+      "records": "Analize & Predicții",
+      "recordsHint": "Câte o predicție generată pentru fiecare set de analize",
+      "relations": "Relații Active"
+    },
+    "actions": {
+      "manageUsers": "Gestionează Utilizatori",
+      "verificationQueue": "Coadă de Verificare"
+    },
+    "verification": {
+      "title": "Cereri de Verificare",
+      "resultCount": "cereri în așteptare",
+      "empty": "Nicio cerere în așteptare. Toți specialiștii au fost verificați.",
+      "errorLoad": "Eroare la încărcarea cererilor de verificare.",
+      "approve": "Aprobă",
+      "reject": "Respinge",
+      "approveTitle": "Aprobă Specialist",
+      "approveMessage": "Ești sigur că dorești să aprobi contul lui {{name}}? Acesta va putea accesa platforma ca specialist verificat.",
+      "rejectTitle": "Respinge Verificare",
+      "rejectMessage": "Introdu motivul respingerii pentru {{name}}. Specialistul va fi notificat.",
+      "rejectReason": "Motiv",
+      "rejectPlaceholder": "Ex: Document nevalid, date incomplete...",
+      "rejectRequired": "Motivul este obligatoriu.",
+      "rejectMinChars": "Motivul trebuie să aibă cel puțin 10 caractere.",
+      "rejectConfirm": "Confirmă Respingerea",
+      "actionError": "Eroare la procesarea cererii. Încearcă din nou.",
+      "submitting": "Se procesează..."
+    },
+    "users": {
+      "title": "Gestionare Utilizatori",
+      "resultCount": "utilizatori găsiți",
+      "backToDashboard": "Înapoi la Panou",
+      "searchPlaceholder": "Caută după nume sau email...",
+      "empty": "Niciun utilizator găsit.",
+      "tabs": {
+        "all": "Toți",
+        "patients": "Pacienți",
+        "doctors": "Medici",
+        "na": "Nutriționiști & Antrenori"
+      },
+      "columns": {
+        "name": "Nume",
+        "email": "Email",
+        "role": "Rol",
+        "status": "Status",
+        "createdAt": "Data înregistrării"
+      },
+      "roles": {
+        "PATIENT": "Pacient",
+        "DOCTOR": "Medic",
+        "NUTRITIONIST": "Nutriționist",
+        "COACH": "Antrenor",
+        "ADMIN": "Admin"
+      },
+      "status": {
+        "active": "Activ",
+        "inactive": "Inactiv"
+      },
+      "toggle": {
+        "activate": "Activează",
+        "deactivate": "Dezactivează",
+        "activateTitle": "Activează Cont",
+        "deactivateTitle": "Dezactivează Cont",
+        "activateMessage": "Ești sigur că dorești să activezi contul lui {{name}}?",
+        "deactivateMessage": "Ești sigur că dorești să dezactivezi contul lui {{name}}? Utilizatorul nu va mai putea accesa platforma.",
+        "error": "Eroare la modificarea statusului contului."
+      },
+      "expand": {
+        "verificationStatus": "Status verificare",
+        "rejectionReason": "Motiv respingere",
+        "documentLink": "Vezi document de verificare",
+        "loadError": "Eroare la încărcarea datelor profesionale."
+      },
+      "verificationStatuses": {
+        "PENDING_VERIFICATION": "În așteptare",
+        "APPROVED": "Aprobat",
+        "REJECTED": "Respins"
+      },
+      "pagination": {
+        "prev": "Anterior",
+        "next": "Următor",
+        "page": "Pagina {{current}} din {{total}}"
+      }
+    }
+  },
+  "specialistVerification": {
+    "pendingTitle": "Cont în Curs de Verificare",
+    "pendingMessage": "Contul tău este în curs de verificare. Vei fi notificat când procesul este finalizat.",
+    "rejectedTitle": "Verificare Respinsă",
+    "rejectedReason": "Motiv: {{reason}}",
+    "credentialsSection": "Date Profesionale Trimise",
+    "documentSection": "Document de Verificare",
+    "resubmitButton": "Retrimite Cererea",
+    "resubmitLoading": "Se procesează...",
+    "errors": {
+      "resubmitFailed": "Eroare la retrimiterea cererii. Încearcă din nou."
+    }
+  },
+  "specialistRequests": {
+    "title": "Cereri & Conexiuni",
+    "subtitle": "Gestionează cererile primite, trimise și relațiile active.",
+    "received": {
+      "title": "Cereri Primite",
+      "empty": "Nicio cerere primită în așteptare."
+    },
+    "active": {
+      "title": "Relații Active",
+      "empty": "Nicio relație activă momentan.",
+      "revokeButton": "Revocă",
+      "revokeTitle": "Revocare Conexiune",
+      "revokeConfirm": "Ești sigur că dorești să revoci accesul acestui pacient?"
+    }
+  },
+  "specialistProfile": {
+    "pageTitle": "Profilul Meu",
+    "sections": {
+      "basicInfo": "Informații de Bază",
+      "extendedDetails": "Detalii Profesionale",
+      "workExperience": "Experiență Profesională",
+      "education": "Educație",
+      "certifications": "Certificări",
+      "photo": "Fotografie Profil"
+    },
+    "saveButton": "Salvează",
+    "saving": "Se salvează...",
+    "saveSuccess": "Modificările au fost salvate cu succes.",
+    "saveError": "Eroare la salvarea modificărilor. Încearcă din nou.",
+    "previewButton": "Previzualizare Profil Public",
+    "reverification": {
+      "button": "Solicită Reverificare",
+      "confirmTitle": "Solicită Reverificare",
+      "confirmMessage": "Ești sigur că dorești să soliciți reverificarea? Statusul tău va fi resetat la 'În Așteptare' și profilul tău nu va mai fi vizibil public până la aprobare.",
+      "confirm": "Confirmă",
+      "cancel": "Anulează",
+      "successToast": "Cererea de reverificare a fost trimisă.",
+      "errorToast": "Eroare la trimiterea cererii."
+    },
+    "workplacePrefill": "Câmpul Angajator a fost pre-completat din unitatea sanitară înregistrată la verificare. Poți modifica această valoare.",
+    "photoUpload": {
+      "changePhoto": "Schimbă Fotografia",
+      "removePhoto": "Elimină Fotografia",
+      "uploadError": "Eroare la încărcarea fotografiei.",
+      "removeError": "Eroare la eliminarea fotografiei.",
+      "sizeHint": "JPEG, PNG sau WebP · max 5 MB"
+    },
+    "basicInfo": {
+      "bioLabel": "Descriere Profesională",
+      "bioPlaceholder": "Prezintă-te în câteva cuvinte...",
+      "websiteLabel": "Website",
+      "websitePlaceholder": "https://",
+      "programLucruLabel": "Program de Lucru",
+      "programLucruPlaceholder": "ex: Luni–Vineri, 09:00–17:00",
+      "limbiVorbiteLabel": "Limbi Vorbite",
+      "charsRemaining": "{{count}} caractere rămase"
+    },
+    "credentials": {
+      "sectionTitle": "Credențiale",
+      "codParafaLabel": "Cod Parafă",
+      "unitateSanitaraLabel": "Unitate Sanitară",
+      "numarOndrLabel": "Număr ONDR",
+      "institutieAbsolvireLabel": "Instituție de Absolvire",
+      "tipCertificareLabel": "Tip Certificare",
+      "numarCertificareLabel": "Număr Certificare",
+      "documentLink": "Vezi documentul de verificare",
+      "notProvided": "Necompletat",
+      "reverificationNote": "Modificarea credențialelor va trimite contul tău la reverificare. Acest proces poate dura câteva zile lucrătoare. Relațiile tale active cu pacienții nu vor fi afectate."
+    },
+    "roleSpecific": {
+      "gradLabel": "Grad Profesional",
+      "gradPlaceholder": "-- Selectează gradul --",
+      "specializariSecundareLabel": "Specializări Secundare",
+      "competenteAtestateLabel": "Competențe Atestate",
+      "competenteAtestateHint": "Adaugă o competență și apasă Enter (max. 10)",
+      "specializareNutritieLabel": "Specializare Nutriție",
+      "specializareSportivaLabel": "Specializare Sportivă",
+      "filosofieProfesionalaLabel": "Filosofie Profesională",
+      "filosofieProfesionalaPlaceholder": "Descrie abordarea ta profesională...",
+      "maxTagsReached": "Ai atins limita de 10 competențe atestate"
+    }
+  },
+  "publicProfile": {
+    "pageTitle": "Profil Specialist",
+    "sendRequest": "Trimite Cerere de Conectare",
+    "requestPending": "Cerere Trimisă",
+    "requestApproved": "Conectat",
+    "chat": "Mesaj",
+    "verifiedBadge": "Specialist Verificat",
+    "about": "Despre",
+    "errorLoad": "Eroare la încărcarea profilului.",
+    "notFound": "Profilul nu a fost găsit sau specialistul nu este verificat.",
+    "unavailable": "Profil Indisponibil",
+    "back": "Înapoi",
+    "ownProfile": "Acesta este profilul tău",
+    "editProfile": "Editează Profil",
+    "languagesTitle": "Limbi Vorbite",
+    "workingHoursTitle": "Program de Lucru",
+    "roleSpecificTitle": "Profil Profesional",
+    "credentialsTitle": "Credențiale Verificate",
+    "verifiedCredential": "Verificat la înregistrare",
+    "sendingRequest": "Se trimite..."
+  },
+  "workExperience": {
+    "sectionTitle": "Experiență Profesională",
+    "empty": "Nicio intrare adăugată. Adaugă prima ta experiență profesională.",
+    "addButton": "Adaugă Experiență",
+    "modalTitleAdd": "Adaugă Experiență",
+    "modalTitleEdit": "Editează Experiența",
+    "fields": {
+      "title": "Titlu / Funcție",
+      "employer": "Angajator",
+      "location": "Locație",
+      "startDate": "Data Începerii",
+      "endDate": "Data Finalizării",
+      "currentPosition": "Poziție curentă (ongoing)",
+      "description": "Descriere"
+    },
+    "saveButton": "Salvează",
+    "cancelButton": "Anulează",
+    "editButton": "Editează",
+    "deleteButton": "Șterge",
+    "present": "Prezent",
+    "deleteConfirmTitle": "Șterge Experiență Profesională",
+    "confirmDelete": "Ești sigur că dorești să ștergi această intrare?",
+    "saveError": "Eroare la salvarea intrării.",
+    "deleteError": "Eroare la ștergerea intrării."
+  },
+  "education": {
+    "sectionTitle": "Educație",
+    "empty": "Nicio instituție adăugată.",
+    "addButton": "Adaugă Educație",
+    "modalTitleAdd": "Adaugă Educație",
+    "modalTitleEdit": "Editează Educația",
+    "fields": {
+      "institution": "Instituție",
+      "degree": "Titlu / Diplomă",
+      "fieldOfStudy": "Domeniu de Studiu",
+      "yearCompleted": "Anul Absolvirii",
+      "honors": "Distincții / Mențiuni"
+    },
+    "saveButton": "Salvează",
+    "cancelButton": "Anulează",
+    "editButton": "Editează",
+    "deleteButton": "Șterge",
+    "deleteConfirmTitle": "Șterge Educație",
+    "confirmDelete": "Ești sigur că dorești să ștergi această intrare?",
+    "saveError": "Eroare la salvarea intrării.",
+    "deleteError": "Eroare la ștergerea intrării."
+  },
+  "certifications": {
+    "sectionTitle": "Certificări",
+    "empty": "Nicio certificare adăugată.",
+    "addButton": "Adaugă Certificare",
+    "modalTitleAdd": "Adaugă Certificare",
+    "modalTitleEdit": "Editează Certificarea",
+    "fields": {
+      "name": "Denumire",
+      "issuingBody": "Organizație Emitentă",
+      "certificationNumber": "Număr Certificare",
+      "issueDate": "Data Emiterii",
+      "expiryDate": "Data Expirării"
+    },
+    "saveButton": "Salvează",
+    "cancelButton": "Anulează",
+    "editButton": "Editează",
+    "deleteButton": "Șterge",
+    "deleteConfirmTitle": "Șterge Certificare",
+    "confirmDelete": "Ești sigur că dorești să ștergi această certificare?",
+    "saveError": "Eroare la salvarea certificării.",
+    "deleteError": "Eroare la ștergerea certificării.",
+    "noExpiry": "Nu expiră",
+    "expired": "Expirat",
+    "expiringSoon": "Expiră curând"
+  },
+  "profileCompletion": {
+    "tier": {
+      "baza": "Profil de Bază",
+      "dezvoltare": "În Dezvoltare",
+      "avansat": "Profil Avansat",
+      "complet": "Profil Complet"
+    },
+    "nextAction": {
+      "photo": "Adaugă o fotografie de profil",
+      "bio": "Scrie o scurtă descriere (min. 50 caractere)",
+      "workExperience": "Adaugă cel puțin o experiență profesională",
+      "education": "Adaugă cel puțin o instituție de educație",
+      "certifications": "Adaugă cel puțin o certificare",
+      "roleSpecific": "Completează câmpurile specifice rolului tău",
+      "languages": "Adaugă cel puțin o limbă vorbită",
+      "workingHours": "Completează programul de lucru"
+    },
+    "percentLabel": "{{percent}}% completat"
+  },
+  "languages": {
+    "RO": "Română",
+    "EN": "Engleză",
+    "FR": "Franceză",
+    "DE": "Germană",
+    "ES": "Spaniolă",
+    "IT": "Italiană",
+    "OTHER": "Altă limbă"
+  },
+  "specialistGrade": {
+    "REZIDENT": "Medic Rezident",
+    "SPECIALIST": "Medic Specialist",
+    "PRIMAR": "Medic Primar"
+  },
+  "nutritionSpecialization": {
+    "CLINICA": "Nutriție Clinică",
+    "SPORTIVA": "Nutriție Sportivă",
+    "PEDIATRICA": "Nutriție Pediatrică",
+    "ONCOLOGICA": "Nutriție Oncologică",
+    "SARCINA": "Nutriție în Sarcină",
+    "ALTELE": "Altele"
+  },
+  "sportSpecialization": {
+    "FITNESS_GENERAL": "Fitness General",
+    "CULTURISM": "Culturism",
+    "RECUPERARE": "Recuperare Medicală",
+    "NUTRITIE_SPORTIVA": "Nutriție Sportivă",
+    "YOGA": "Yoga",
+    "PILATES": "Pilates",
+    "ATLETISM": "Atletism",
+    "ALTELE": "Altele"
+  },
+  "chat": {
+    "title": "Mesaje",
+    "emptyState": "Nu ai nicio conversație activă.",
+    "selectConversation": "Selectează o conversație",
+    "loading": "Se încarcă...",
+    "errorGeneric": "A apărut o eroare. Încearcă din nou.",
+    "sendPlaceholder": "Scrie un mesaj...",
+    "sendButton": "Trimite",
+    "systemRedFlagLabel": "Alertă de risc",
+    "systemRedFlagConditions": "Condiții detectate",
+    "systemRedFlagLink": "Vezi înregistrarea medicală",
+    "today": "Azi",
+    "yesterday": "Ieri",
+    "conversationList": {
+      "empty": "Nicio conversație activă.",
+      "unreadAria": "{{count}} mesaje necitite",
+      "you": "Tu"
+    },
+    "bubble": {
+      "you": "Tu",
+      "read": "Citit",
+      "delivered": "Trimis"
+    },
+    "composer": {
+      "placeholder": "Scrie un mesaj...",
+      "send": "Trimite",
+      "disconnected": "Deconectat — se reconectează..."
+    },
+    "toast": {
+      "redFlagTitle": "Alertă de risc detectată",
+      "redFlagBody": "{{count}} condiții au fost marcate ca risc crescut pentru un pacient.",
+      "viewPatient": "Vezi fișa pacientului"
+    },
+    "accessRequest": {
+      "title": "Solicitare de Acces la Markeri",
+      "requested": "Markeri solicitați",
+      "justification": "Justificare",
+      "approveSelected": "Aprobă Selectat",
+      "declineAll": "Respinge",
+      "pending": "În așteptare",
+      "approvedStatus": "Aprobat",
+      "declinedStatus": "Respins",
+      "confirmApproval": "Confirmă Aprobarea",
+      "confirmDeclinePrompt": "Ești sigur că vrei să respingi această cerere?",
+      "subDialogTitle": "Selectează Markeri de Aprobat",
+      "subDialogSubtitle": "Debifează markerii pe care nu dorești să îi aprobi.",
+      "subDialogConfirm": "Confirmă Aprobarea",
+      "subDialogCancel": "Anulează"
+    },
+    "accessResponse": {
+      "approved": "Cerere aprobată",
+      "declined": "Cerere respinsă",
+      "approvedMarkers": "Markeri aprobați",
+      "noMarkers": "Niciun marker aprobat",
+      "keyReissuedToast": "Cheie de acces actualizată"
+    },
+    "planBubble": {
+      "viewPlanCta": "Vezi planul",
+      "sentBy": "De la {{name}}",
+      "mealPlanLabel": "Plan Alimentar",
+      "workoutPlanLabel": "Plan de Antrenament"
+    },
+    "plan": {
+      "mealPlanTitle": "Plan Alimentar",
+      "workoutPlanTitle": "Plan de Antrenament",
+      "titleLabel": "Titlu",
+      "titlePlaceholder": "ex: Plan alimentar săptămâna 1...",
+      "contentLabel": "Conținut",
+      "contentPlaceholder": "Descrie planul în detaliu...",
+      "charCountTitle": "{{count}}/{{max}}",
+      "charCountContent": "{{count}}/{{max}}",
+      "send": "Trimite Planul",
+      "sending": "Se trimite...",
+      "cancel": "Anulează",
+      "error": "Eroare la trimiterea planului. Încearcă din nou.",
+      "successMessage": "Planul a fost trimis cu succes."
+    },
+    "planReceived": {
+      "toast": "Ai primit un plan nou de la specialistul tău.",
+      "cta": "Vezi planul"
+    }
+  },
+  "notifications": {
+    "relationApproved": "Conexiune aprobată",
+    "relationRejected": "Cerere respinsă",
+    "relationRevoked": "Conexiune revocată",
+    "verificationApproved": "Cont aprobat",
+    "verificationRejected": "Verificare respinsă"
+  },
+  "markers": {
+    "sex": "Sex",
+    "age": "Vârstă",
+    "bmi": "IMC (Indice de Masă Corporală)",
+    "waist_circumference": "Circumferință Abdominală",
+    "systolic_bp": "Tensiune Arterială Sistolică",
+    "diastolic_bp": "Tensiune Arterială Diastolică",
+    "hba1c": "Hemoglobina Glicată (HbA1c)",
+    "fasting_glucose": "Glicemie à jeun",
+    "total_cholesterol": "Colesterol Total",
+    "hdl": "Colesterol HDL",
+    "ldl": "Colesterol LDL",
+    "triglycerides": "Trigliceride",
+    "crp": "Proteina C-Reactivă (CRP)",
+    "alt": "Alanin Aminotransferază (ALT)",
+    "ast": "Aspartat Aminotransferază (AST)",
+    "ggt": "Gamma-Glutamil Transferază (GGT)",
+    "creatinine": "Creatinină Serică",
+    "urea": "Uree Serică",
+    "uacr": "Raport Albumină/Creatinină Urinară (UACR)",
+    "uric_acid": "Acid Uric",
+    "hemoglobin": "Hemoglobină",
+    "mcv": "Volum Eritrocitar Mediu (MCV)",
+    "ferritin": "Feritină",
+    "vitamin_d": "Vitamina D",
+    "folate": "Folat (Acid Folic)",
+    "smoker_status": "Status Fumător"
+  },
+  "markerGroups": {
+    "universal": "Date Generale",
+    "cardiovascular": "Cardiovascular",
+    "metabolic": "Metabolic",
+    "hepatic": "Hepatic",
+    "renal": "Renal",
+    "hematological": "Hematologic"
+  },
+  "accessRequest": {
+    "title": "Solicită Acces la Markeri",
+    "subtitle": "Selectează markerii la care soliciți acces și descrie motivul clinic.",
+    "selectAllLocked": "Selectează toți",
+    "alreadyAccessible": "Acces activ",
+    "justificationLabel": "Justificare clinică",
+    "justificationPlaceholder": "Descrie motivul clinic pentru accesarea acestor markeri...",
+    "charCount": "{{count}}/1000",
+    "minCharsHint": "Minim 20 caractere",
+    "noMarkersSelected": "Selectează cel puțin un marker",
+    "submitButton": "Trimite Cererea",
+    "cancelButton": "Anulează",
+    "submitting": "Se trimite...",
+    "successMessage": "Cererea de acces a fost trimisă pacientului.",
+    "errorMessage": "Eroare la trimiterea cererii. Încearcă din nou.",
+    "conflictMessage": "Există deja o cerere de acces în așteptare pentru unul sau mai mulți markeri selectați. Așteaptă răspunsul pacientului înainte de a trimite o nouă cerere.",
+    "requestAccessButton": "Solicită Acces"
+  },
+  "plans": {
+    "viewModal": {
+      "mealPlanLabel": "Plan Alimentar",
+      "workoutPlanLabel": "Plan de Antrenament",
+      "sentBy": "De la {{name}}",
+      "sentOn": "{{date}}",
+      "copyButton": "Copiază",
+      "copied": "Copiat!",
+      "downloadPdf": "Descarcă PDF",
+      "downloading": "Se descarcă...",
+      "downloadError": "Eroare la descărcarea PDF.",
+      "close": "Închide"
+    }
+  },
+  "myPlans": {
+    "pageTitle": "Planurile Mele",
+    "pageSubtitle": "Planuri alimentare și de antrenament primite de la specialiști",
+    "activeSection": "Active",
+    "archivedSection": "Arhivate",
+    "archiveButton": "Arhivează",
+    "restoreButton": "Restaurează",
+    "emptyActive": "Nu ai primit încă niciun plan.",
+    "emptyArchived": "Nu ai planuri arhivate.",
+    "loading": "Se încarcă planurile...",
+    "error": "Eroare la încărcarea planurilor."
+  },
+  "sentPlans": {
+    "pageTitle": "Planuri Trimise",
+    "pageSubtitle": "Planuri trimise pacienților tăi",
+    "activeSection": "Active",
+    "archivedSection": "Arhivate",
+    "archiveButton": "Arhivează",
+    "restoreButton": "Restaurează",
+    "emptyState": "Nu ai trimis încă niciun plan.",
+    "loading": "Se încarcă planurile...",
+    "error": "Eroare la încărcarea planurilor."
+  },
+  "platform": {
+    "header": {
+      "sectionLabel": "DESPRE PLATFORMĂ",
+      "title": "HealthMonitor, în detaliu",
+      "intro": "O privire completă asupra modului în care platforma transformă analizele tale de laborator în informații utile: cele opt afecțiuni monitorizate, cei 26 de markeri analizați, ecosistemul de specialiști verificați, tehnologia din spate și garanțiile criptografice care îți protejează datele."
+    },
+    "sidebar": {
+      "header": "Prezentare",
+      "conditions": "Afecțiuni",
+      "markers": "Analize",
+      "specialists": "Specialiști",
+      "technology": "Tehnologie",
+      "security": "Securitate",
+      "mlAccuracy": "Acuratețe"
+    },
+    "conditions": {
+      "sectionLabel": "AFECȚIUNI MONITORIZATE",
+      "title": "Opt afecțiuni. Un singur profil de risc.",
+      "subtitle": "Platforma monitorizează simultan cele opt grupe de boli cu cel mai mare impact asupra sănătății adultului. Fiecare predicție este antrenată pe seturi de date publice CDC și validată cu metrici clinice standard.",
+      "cardiovascular": {
+        "name": "Risc Cardiovascular",
+        "tag": "Inimă & vase",
+        "description": "Bolile cardiovasculare rămân principala cauză de mortalitate la nivel global, dar și cea mai prevenibilă. Riscul tău este calculat prin scorul Framingham 2008 — același folosit de cardiologii din toată lumea — și surprinde probabilitatea unui eveniment cardiovascular major în următorii 10 ani. Detectarea timpurie poate transforma o predispoziție într-un risc gestionabil prin schimbarea stilului de viață.",
+        "stat": "32% din decesele globale sunt cauzate de boli cardiovasculare (OMS, 2021)."
+      },
+      "diabetes": {
+        "name": "Diabet",
+        "tag": "Glicemie & insulină",
+        "description": "Diabetul de tip 2 apare lent — adesea cu ani de „prediabet\" asimptomatic înainte de diagnostic. Modelul nostru clasifică profilul tău în trei categorii — sănătos, borderline (prediabet) și diabet — pentru a-ți oferi semnale înainte ca afecțiunea să devină ireversibilă. În stadiile incipiente, reversibilitatea este posibilă prin schimbarea regimului.",
+        "stat": "1 din 10 adulți la nivel global are diabet; aproape jumătate nu știu (IDF Diabetes Atlas, 2021)."
+      },
+      "metabolicSyndrome": {
+        "name": "Sindrom Metabolic",
+        "tag": "Cluster de risc",
+        "description": "Sindromul metabolic este o combinație de cinci factori — circumferință abdominală crescută, glicemie mărită, trigliceride mari, HDL scăzut și tensiune ridicată — care, împreună, dublează riscul cardiovascular. Diagnosticul se pune când coexistă cel puțin trei din cinci, conform criteriilor IDF / ATP III.",
+        "stat": "Sindromul metabolic dublează riscul de evenimente cardiovasculare și crește cu peste 50% mortalitatea totală (Mottillo et al., meta-analiză 951.083 pacienți, 2010)."
+      },
+      "hepaticSteatosis": {
+        "name": "Steatoză Hepatică",
+        "tag": "Ficat gras",
+        "description": "Steatoza hepatică non-alcoolică (NAFLD) este acumularea de grăsime în ficat și apare adesea la persoane cu greutate normală sau ușor crescută. În stadiile incipiente este complet asimptomatică și reversibilă, dar netratată poate progresa către inflamație, fibroză și ciroză. Modelul nostru folosește Fatty Liver Index (FLI), validat clinic de Bedogni et al., 2006.",
+        "stat": "1 din 4 adulți din lume are NAFLD, dar majoritatea nu sunt diagnosticați (Younossi et al., 2019)."
+      },
+      "ckd": {
+        "name": "Boală Renală Cronică",
+        "tag": "Funcție renală",
+        "description": "Boala renală cronică este pierderea progresivă a funcției rinichilor și este una dintre cele mai tăcute afecțiuni — peste 80% dintre persoanele afectate nu știu că o au. Modelul nostru calculează rata de filtrare glomerulară (eGFR) prin formula CKD-EPI 2021, cea mai precisă în uz astăzi. Intervenția precoce poate încetini semnificativ progresia.",
+        "stat": "9 din 10 adulți cu boală renală cronică nu sunt diagnosticați (CDC, 2023)."
+      },
+      "anemia": {
+        "name": "Anemie",
+        "tag": "Oxigenare tisulară",
+        "description": "Anemia înseamnă mai puține celule roșii sau hemoglobină scăzută — și, prin urmare, mai puțin oxigen livrat țesuturilor. Cauzele variază: deficit de fier, vitamine, pierderi cronice de sânge sau patologii ascunse. Modelul nostru aplică pragurile OMS 2011, diferențiate pe sex, pentru un diagnostic precis.",
+        "stat": "Aproximativ 1,8 miliarde de oameni au anemie la nivel global — peste un sfert din populație (OMS, 2021)."
+      },
+      "hypertension": {
+        "name": "Hipertensiune",
+        "tag": "Tensiune arterială",
+        "description": "Hipertensiunea arterială este „ucigașul tăcut\" — adesea fără simptome, dar provoacă atac vascular cerebral, infarct și insuficiență renală. Doar jumătate dintre cei afectați sunt diagnosticați și doar un sfert au tensiunea sub control. Detectarea timpurie schimbă complet evoluția bolii.",
+        "stat": "1,28 miliarde de adulți la nivel global au hipertensiune; 46% nu știu că au (OMS, 2023)."
+      },
+      "dyslipidemia": {
+        "name": "Dislipidemie",
+        "tag": "Profil lipidic",
+        "description": "Dislipidemia este dezechilibrul lipidic din sânge — colesterol LDL crescut, trigliceride mari sau HDL scăzut. Este factorul central în aterogeneza care duce la infarct miocardic și AVC, dar răspunde excepțional la schimbarea regimului alimentar și la statine, când este cazul. Detectarea timpurie este cheia.",
+        "stat": "39% dintre adulții din lume au colesterol total crescut (OMS, 2023)."
+      }
+    },
+    "markers": {
+      "sectionLabel": "ANALIZE MONITORIZATE",
+      "title": "26 analize. O imagine completă.",
+      "subtitle": "Toate valorile sunt extrase automat din PDF-ul de la laborator — fără tastare manuală. Cele 26 de teste sunt organizate în șase grupe clinice și acoperă în mod complementar întregul spectru metabolic, cardiovascular, hepatic, renal și hematologic.",
+      "groupCardiovascular": {
+        "title": "Cardiovascular",
+        "count": "8 markeri",
+        "description": "Cum funcționează inima și vasele de sânge. Tensiunea, colesterolul fracționat, trigliceridele și inflamația sistemică (CRP) prezic riscul de evenimente cardiovasculare majore peste un orizont de 10 ani."
+      },
+      "groupMetabolic": {
+        "title": "Metabolic",
+        "count": "5 markeri",
+        "description": "Cum prelucrezi zahărul, depozitezi energia și menții echilibrul hormonal. Glicemia, HbA1c, circumferința abdominală, UACR și vitamina D descriu sănătatea metabolică pe termen lung."
+      },
+      "groupHepatic": {
+        "title": "Hepatic",
+        "count": "3 markeri",
+        "description": "Sănătatea ficatului — organul care metabolizează tot ce mănânci, bei și respiri. ALT, AST și GGT sunt enzimele care, când cresc, semnalează inflamație sau acumulare hepatică de grăsime."
+      },
+      "groupRenal": {
+        "title": "Renal",
+        "count": "3 markeri",
+        "description": "Funcția renală — capacitatea rinichilor de a curăța sângele de produse de deșeu. Creatinina, ureea și acidul uric sunt indicatorii standardizați ai filtrării glomerulare."
+      },
+      "groupHematological": {
+        "title": "Hematologic",
+        "count": "4 markeri",
+        "description": "Sângele tău în detaliu — celulele roșii, fierul și nutrienții esențiali. Hemoglobina, MCV, feritina și folatul descriu împreună capacitatea de transport a oxigenului și deficiențele nutritive ascunse."
+      },
+      "groupUniversal": {
+        "title": "Date Generale",
+        "count": "3 elemente",
+        "description": "Datele care contextualizează tot restul — vârstă, sex biologic și indicele de masă corporală. Sunt vizibile tuturor specialiștilor cu care colaborezi și calibrate la fiecare model A.I."
+      },
+      "extractionNote": "Numele markerilor afișați în carduri provin din standardele Synevo, Regina Maria și MedLife."
+    },
+    "specialists": {
+      "sectionLabel": "ECOSISTEM SPECIALIȘTI",
+      "title": "Specialiști verificați. Roluri clare.",
+      "subtitle": "Fiecare specialist este verificat manual de echipa noastră înainte să poată interacționa cu pacienții — printr-un proces transparent similar celui folosit de Colegiul Medicilor.",
+      "verificationIntro": "Procesul de verificare diferă în funcție de rol: medicii sunt validați prin codul de parafă emis de Colegiul Medicilor din România (CMR), nutriționiștii prin numărul ONDR, iar antrenorii personali prin certificările ANEFS, NASM, ACE sau ISSA. Toate documentele sunt revizuite individual de un administrator înainte ca un cont să fie activat.",
+      "cardiologie": { "name": "Cardiologie", "description": "Cardiologul monitorizează tensiunea, colesterolul fracționat, trigliceridele, CRP-ul și statusul fumător — toți factorii care prezic evenimentele cardiovasculare majore." },
+      "endocrinologie": { "name": "Endocrinologie", "description": "Endocrinologul urmărește profilul metabolic complet — glicemie, HbA1c, lipide, vitamina D, circumferință abdominală — pentru a depista diabetul, dezechilibrele hormonale și sindromul metabolic." },
+      "diabetNutritie": { "name": "Diabet, Nutriție și Boli Metabolice", "description": "Specialistul în diabet, nutriție și boli metabolice este punctul de întâlnire dintre endocrinologie și nutriție — coordonează planuri terapeutice și nutriționale pentru pacienții cu prediabet, diabet și sindrom metabolic." },
+      "gastroenterologie": { "name": "Gastroenterologie", "description": "Gastroenterologul interpretează enzimele hepatice (ALT, AST, GGT), trigliceridele și feritina pentru a evalua sănătatea ficatului și a tractului digestiv." },
+      "hepatologie": { "name": "Hepatologie", "description": "Hepatologul se concentrează exclusiv pe ficat — gestionează steatoza hepatică, fibroza și evoluția ALT, AST, GGT, plus feritina și UACR când există patologie metabolică asociată." },
+      "nefrologie": { "name": "Nefrologie", "description": "Nefrologul supraveghează funcția renală prin creatinină, uree, acid uric, UACR și hemoglobină — și calibrează tratamentul când rata de filtrare glomerulară scade." },
+      "hematologie": { "name": "Hematologie", "description": "Hematologul interpretează hemoglobina, MCV, feritina, folatul și CRP-ul pentru a diagnostica anemiile, deficiențele nutritive și inflamațiile sistemice." },
+      "urologie": { "name": "Urologie", "description": "Urologul are acces la funcția renală (creatinină, uree, acid uric) și la UACR, pentru a evalua patologia tractului urinar și a urmări infecțiile sau calculii renali." },
+      "medicinaInterna": { "name": "Medicina Internă", "description": "Internistul are cea mai largă perspectivă — vede toți cei 26 de markeri prin default și acționează ca punct de coordonare între specialitățile de organ." },
+      "nutritionist": { "name": "Nutriționist", "description": "Nutriționistul accesează profilul metabolic complet și lipidic — pentru a construi planuri alimentare personalizate care reflectă realitatea biologică, nu doar preferințele." },
+      "antrenor": { "name": "Antrenor Personal", "description": "Antrenorul personal vede circumferința abdominală și parametrii vitali generali pentru a calibra programe de antrenament adaptate profilului cardiovascular al sportivului." }
+    },
+    "technology": {
+      "title1": "TEHNOLOGIE",
+      "title2": "MEDICALĂ",
+      "subtitle": "Patru piloni tehnici care fac platforma unică: criptarea per marker, scorul ponderat clinic, graficele de comparație în oglindă și ecosistemul în timp real.",
+      "explore": "Explorează Arhitectura →",
+      "abeTitle": "Criptare A.B.E (Attribute-Based Encryption)",
+      "abeDesc": "Fiecare dintre cei 26 de markeri este criptat individual cu o politică matematică ce reflectă specializările medicale care au nevoie de el. Concret: un cardiolog conectat la profilul tău vede colesterolul, trigliceridele și CRP-ul — dar valorile rinichilor rămân matematic inaccesibile pentru cheia lui. Schema CP-ABE descrisă de Bethencourt, Sahai și Waters (2007).",
+      "scoreTitle": "Health Score Ponderat Clinic",
+      "scoreDesc": "Nu o medie simplă — riscul cardiovascular cântărește cel mai mult în scor pentru că este principala cauză de mortalitate. Fiecare afecțiune este ponderată după impactul clinic, după logica indicelui Charlson Comorbidity Index (Charlson et al., 1987).",
+      "mirrorTitle": "Grafice „În Oglindă\"",
+      "mirrorDesc": "Compară analizele tale din iunie cu cele de azi. Vezi traiectoria exactă a fiecărui marker în timp și identifică instant dacă intervențiile tale — dieta, exercițiile, medicația — funcționează cu adevărat.",
+      "ecoTitle": "Ecosistem Multi-Rol Live",
+      "ecoDesc": "Când A.I.-ul detectează un prag critic — glicemie peste 250, HbA1c peste 9.5 — specialiștii tăi conectați primesc o alertă instant în panoul lor, chiar dacă lucrează în altă filă a aplicației.",
+      "chatMsg1": "Glicemia a scăzut! Super evoluție cu noua dietă.",
+      "chatMsg2": "Mulțumesc! Continuăm planul?"
+    },
+    "security": {
+      "sectionLabel": "SECURITATE PRIN CRIPTOGRAFIE",
+      "title1": "CRIPTOGRAFIE,",
+      "title2": "NU PROMISIUNI",
+      "subtitle": "Diferența dintre o promisiune că datele tale sunt în siguranță și o garanție matematică ce nu poate fi trișată.",
+      "block1Title": "Problema cu sistemele tradiționale",
+      "block1Body": "Platformele medicale clasice stochează datele tale într-o bază de date și controlează accesul prin reguli software. O permisiune greșit configurată, un cont de administrator compromis sau o subpoena legală pot expune toate dosarele tale. Datele sunt vizibile, securitatea este doar o ușă încuiată.",
+      "block2Title": "Cum este diferit CP-ABE",
+      "block2Body": "Cu Ciphertext-Policy Attribute-Based Encryption, fiecare valoare medicală devine un text neîncifrabil fără cheia matematică potrivită. Cheia este legată indisolubil de rolul doctorului (de exemplu, specializarea „cardiolog\") și de relația lui specifică cu tine ca pacient. Nici administratorul platformei, nici un atacator cu acces total la baza de date nu pot citi datele fără cheia validă.",
+      "block3Title": "Fluxul de consimțământ, explicat",
+      "block3Intro": "Ce se întâmplă când cardiologul tău are nevoie să vadă markerii renali:",
+      "block3Step1": "Doctorul trimite o cerere cu markerii ceruți și o justificare scrisă (între 20 și 1000 de caractere).",
+      "block3Step2": "Tu primești cererea direct în chat-ul platformei și citești motivul concret — nu o solicitare generică.",
+      "block3Step3": "Aprobi markerii specifici pe care vrei să-i deblochezi — bifezi unul, doi sau zece, exact câți dorești.",
+      "block3Step4": "Sistemul re-emite o cheie criptografică actualizată, valabilă DOAR pentru profilul tău și DOAR pentru markerii aprobați.",
+      "block3Step5": "Dacă revoci relația cu doctorul, cheia lui devine instant invalidă — fără acțiune suplimentară din partea ta. Markerii redevin matematic inaccesibili.",
+      "block4Title": "Sistem tradițional vs HealthMonitor",
+      "block4ColTraditional": "Sistem Tradițional",
+      "block4ColHealthMonitor": "HealthMonitor",
+      "block4Row1Label": "Control acces",
+      "block4Row1Traditional": "Reguli software (IAM, ACL, permisiuni DB)",
+      "block4Row1HealthMonitor": "Criptografie pe câmp (CP-ABE)",
+      "block4Row2Label": "Impactul unei breșe",
+      "block4Row2Traditional": "Toate datele expuse în clar",
+      "block4Row2HealthMonitor": "Datele rămân criptate, inutile fără cheie",
+      "block4Row3Label": "Granularitate consimțământ",
+      "block4Row3Traditional": "Totul sau nimic, per dosar",
+      "block4Row3HealthMonitor": "Per marker individual (până la 26 decizii)",
+      "block4Row4Label": "Revocare acces",
+      "block4Row4Traditional": "Necesită ștergere / update în baza de date",
+      "block4Row4HealthMonitor": "Cheia se invalidează instant (timestamp revoked_at)"
+    },
+    "mlAccuracy": {
+      "sectionLabel": "ACURATEȚE & ÎNCREDERE",
+      "title1": "ANTRENAT PE DATE REALE.",
+      "title2": "VALIDAT CLINIC.",
+      "subtitle": "Modelele de Inteligență Artificială sunt instrumente puternice doar atunci când sunt antrenate pe date corecte, reprezentative și verificabile public.",
+      "nhanesTitle": "NHANES — sursa noastră de date",
+      "nhanesBody": "National Health and Nutrition Examination Survey este programul de supraveghere a sănătății populației americane, condus de CDC (Centers for Disease Control and Prevention). De peste 60 de ani, NHANES măsoară parametri clinici, demografici și nutriționali pe eșantioane reprezentative — date complet publice și reproductibile. Modelele noastre folosesc patru cicluri consecutive (2013–2014, 2015–2016, 2017–2018, 2019–2020) și aproximativ 11.400 de pacienți adulți cu profiluri complete pe 26 de markeri.",
+      "modelBTitle": "De ce excludem markerul diagnostic",
+      "modelBBody": "Un model A.I. care vede valoarea HbA1c și prezice diabetul este irelevant clinic — orice medic ar pune același diagnostic cu aceleași date. Modelul nostru de producție este antrenat fără a vedea markerul care definește boala — el învață din factorii de risc adiacenți: greutate, vârstă, profil lipidic, vitamina D, stil de viață. Aceasta este detectarea timpurie reală — identificăm riscul înainte ca markerul diagnostic să se modifice. Acuratețea de mai jos este pe Model B, modelul cinstit.",
+      "treesNote": "Pentru date tabulare clinice, modelele bazate pe arbori (XGBoost, Random Forest) sunt în continuare superioare rețelelor neuronale (Grinsztajn et al., NeurIPS 2022). Aceasta este alegerea noastră tehnică.",
+      "accuracyTitle": "Performanța modelelor — AUC-ROC pe Model B",
+      "accuracyMetricLabel": "AUC-ROC",
+      "accuracyCardiovascular": "96.9%",
+      "accuracyCardiovascularLabel": "Risc Cardiovascular",
+      "accuracyHepaticSteatosis": "95.5%",
+      "accuracyHepaticSteatosisLabel": "Steatoză Hepatică",
+      "accuracyCkd": "96.3%",
+      "accuracyCkdLabel": "Boală Renală Cronică",
+      "accuracyAnemia": "90.2%",
+      "accuracyAnemiaLabel": "Anemie",
+      "accuracyMetabolicSyndrome": "88.8%",
+      "accuracyMetabolicSyndromeLabel": "Sindrom Metabolic",
+      "accuracyHypertension": "86.2%",
+      "accuracyHypertensionLabel": "Hipertensiune",
+      "accuracyDyslipidemia": "82.3%",
+      "accuracyDyslipidemiaLabel": "Dislipidemie",
+      "accuracyDiabetesNote": "Diabet — F1-macro 0.63 (model cu trei clase: Sănătos / Borderline / Diabet; metrică diferită de AUC binar)",
+      "disclaimerTitle": "Disclaimer medical",
+      "disclaimerBody": "HealthMonitor este un instrument de suport pentru decizii clinice (Clinical Decision Support), conceput să te ajute să-ți înțelegi analizele și să-ți susții discuțiile cu specialistul tău. NU este un instrument diagnostic. Rezultatele generate de algoritmii de Inteligență Artificială sunt orientative și NU înlocuiesc consultația medicală licențiată, diagnosticul clinic sau tratamentul prescris de un medic. În conformitate cu Legea nr. 46/2003 privind drepturile pacientului, deciziile terapeutice rămân exclusiv responsabilitatea medicului tău curant."
+    }
+  },
+  "landing": {
+    "hero": {
+      "title1": "TRANSPUNE",
+      "title2": "DATELE ÎN",
+      "title3": "SĂNĂTATE",
+      "subtitle": "Extragem automat valorile din PDF-urile tale de laborator, le trecem prin 8 modele de Inteligență Artificială antrenate pe <1>11.400 de pacienți reali</1> și le aducem direct medicului, nutriționistului sau antrenorului tău — într-o singură platformă criptată câmp cu câmp.",
+      "startAnalysis": "ÎNCEPE ANALIZA",
+      "howItWorks": "AFLĂ CUM FUNCȚIONEAZĂ",
+      "aiPrediction": "PREDICȚIE A.I.",
+      "accuracy": "96.9% AUC-ROC",
+      "cvRisk": "Risc Cardiovascular",
+      "cvRiskLow": "SCĂZUT",
+      "healthScore": "Health Score",
+      "diabetesRisk": "Risc Diabet",
+      "diabetesRiskValue": "BORDERLINE",
+      "poweredBy": "Antrenat pe NHANES 2013–2020 · Date publice CDC · 11.400 pacienți · 26 markeri clinici"
+    },
+    "howItWorks": {
+      "sectionSuperTitle": "CUM",
+      "sectionSuperTitleBold": "FUNCȚIONEAZĂ",
+      "sectionSubtitle": "Trei pași — de la PDF-ul lăsat pe masă, până la un plan personalizat pe care îl poți urma.",
+      "step1Title": "ÎNCARCĂ",
+      "step1Sub": "Ingestie automată",
+      "step1Desc": "Aruncă PDF-ul de la Synevo, Regina Maria, MedLife sau orice alt laborator. Sistemul citește singur tabelele, identifică cei 26 de markeri clinici și îi mapează în profilul tău. Dacă o analiză lipsește, o completezi într-un formular care arată exact ca buletinul tău. Fără tastat zeci de cifre, fără greșeli de transcriere.",
+      "step2Title": "ÎNȚELEGE",
+      "step2Sub": "Analiză A.I. completă",
+      "step2Desc": "Opt modele de Inteligență Artificială (XGBoost și Random Forest) evaluează în paralel riscul pentru opt afecțiuni majore — cardiovasculare, metabolice, hepatice, renale, hematologice. Valorile lipsă sunt estimate statistic prin imputare MICE, aceeași metodă folosită în studiile epidemiologice de referință. Toate predicțiile devin un singur Health Score ponderat clinic — nu o medie simplă, ci o sumă în care riscul cardiovascular cântărește cel mai mult.",
+      "step3Title": "ACȚIONEAZĂ",
+      "step3Sub": "Ecosistem conectat",
+      "step3Desc": "Conectează-te cu medicul, nutriționistul sau antrenorul tău — toți verificați manual prin codul de parafă CMR, numărul ONDR sau certificările sportive. Chat-ul în timp real îți aduce specialistul la un click distanță. Când A.I.-ul detectează un semnal critic — glicemie peste 250, HbA1c peste 9.5 — specialistul tău primește o alertă instant, chiar dacă e pe altă pagină. Primești planuri personalizate direct pe platformă."
+    },
+    "mlAccuracyTeaser": {
+      "sectionLabel": "ACURATEȚE & ÎNCREDERE",
+      "title": "Validat pe date reale, nu pe promisiuni.",
+      "aucValue": "82.3% – 96.9%",
+      "aucLabel": "Acuratețe modele (AUC)",
+      "disclaimerShort": "Variație pe cele 7 condiții. Validat NHANES.",
+      "viewMethodologyCta": "Vezi metodologia completă →"
+    },
+    "cta": {
+      "sectionLabel": "ÎNCEPE ASTĂZI",
+      "title": "Două căi, același obiectiv.",
+      "patientLabel": "PENTRU PACIENȚI",
+      "patientHeadline": "Datele tale, înțelese.",
+      "patientBody": "Încarcă-ți primul PDF de la laborator în mai puțin de un minut. Primești instant un Health Score ponderat clinic, opt predicții A.I. și un grafic istoric al fiecărui marker. Toate datele rămân criptate matematic — chiar și noi, ca operator, nu putem citi valorile tale fără autorizația ta.",
+      "patientCta": "ÎNCEPE ANALIZA",
+      "specialistLabel": "PENTRU SPECIALIȘTI",
+      "specialistHeadline": "Pacienții tăi, în context.",
+      "specialistBody": "Înregistrează-te cu codul tău de parafă CMR, numărul ONDR sau certificarea ta de antrenor. După verificarea documentelor de către administratorul nostru, primești acces la dosarele pacienților care te-au invitat — exact la markerii relevanți pentru specializarea ta. Cere acces extins prin chat când ai nevoie clinică reală.",
+      "specialistCta": "ÎNREGISTREAZĂ-TE CA SPECIALIST"
+    }
+  }
+}
