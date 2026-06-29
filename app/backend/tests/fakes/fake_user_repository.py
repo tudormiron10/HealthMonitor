@@ -80,3 +80,8 @@ class FakeUserRepository(UserRepository):
             return None
         row["is_active"] = is_active
         return row
+
+    async def update_password(self, user_id: UUID, new_hash: str) -> None:
+        row = self.rows.get(user_id)
+        if row is not None:
+            row["password_hash"] = new_hash

@@ -4,22 +4,28 @@ import { Shield } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/application/hooks/useAuth';
 import { recordsApi } from '@/infrastructure/api/recordsApi';
+import { predictionsApi } from '@/infrastructure/api/predictionsApi';
+import type { PredictionRead } from '@/infrastructure/api/predictionsApi';
 import type { MedicalRecordRead } from '@/domain/models/MedicalRecord';
 import { MarkerTrendChart } from '@/presentation/components/charts/MarkerTrendChart';
+import { MedicalAlertsCard } from '@/presentation/pages/patient/components/MedicalAlertsCard';
 
 export const PatientDashboard: React.FC = () => {
   const { profile, role } = useAuth();
   const { t } = useTranslation();
   
   const [records, setRecords] = useState<MedicalRecordRead[]>([]);
+  const [latestPrediction, setLatestPrediction] = useState<PredictionRead | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (role === 'PATIENT') {
-      recordsApi.getMyRecords()
-        .then(data => setRecords(data))
-        .catch(err => console.error("Error fetching records:", err))
-        .finally(() => setLoading(false));
+      Promise.all([
+        recordsApi.getMyRecords().then(setRecords).catch(err => console.error("Error fetching records:", err)),
+        predictionsApi.getMyHistory()
+          .then(history => setLatestPrediction(history[0] ?? null))
+          .catch(err => console.error("Error fetching predictions:", err)),
+      ]).finally(() => setLoading(false));
     }
   }, [role]);
 
@@ -58,9 +64,7 @@ export const PatientDashboard: React.FC = () => {
            </div>
 
            <div className="grid grid-cols-1 gap-6">
-             <div className="h-44 rounded-xl border border-brand-dark/10 bg-white/50 shadow-sm flex items-center justify-center">
-                <span className="text-brand-dark/30 font-heading text-2xl">{t('patientDashboard.alerts')}</span>
-             </div>
+             <MedicalAlertsCard records={records} prediction={latestPrediction} loading={loading} />
              
              <Link 
                 to="/dashboard/patient/add-record"

@@ -18,6 +18,7 @@ Tables:
     - abe_user_keys: Per-relation ABE user key; at most one active row per (specialist, patient)
     - access_requests: Specialist consent requests for out-of-domain marker access
     - user_plan_archives: Per-user soft-archive of plan messages; composite PK (user_id, message_id)
+    - password_reset_tokens: Single-use password reset tokens; only the SHA-256 hash is stored
 """
 
 import uuid
@@ -520,5 +521,27 @@ class UserPlanArchiveORM(Base):
         UUID(as_uuid=True), ForeignKey("messages.id", ondelete="CASCADE"), nullable=False,
     )
     archived_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), nullable=False,
+    )
+
+
+"""Auth Module"""
+
+class PasswordResetTokenORM(Base):
+    """Single-use password reset token; only the SHA-256 hash of the raw token is stored."""
+
+    __tablename__ = "password_reset_tokens"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4,
+    )
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"),
+        nullable=False, index=True,
+    )
+    token_hash: Mapped[str] = mapped_column(String(64), unique=True, nullable=False, index=True)
+    expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    used_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False,
     )

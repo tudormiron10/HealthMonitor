@@ -79,3 +79,28 @@ class RegistrationResponse(BaseModel):
     role: str
     access_token: Optional[str] = None
     token_type: Optional[str] = None
+
+
+class ForgotPasswordRequest(BaseModel):
+    """Request body for initiating a password reset."""
+
+    email: EmailStr
+
+
+class GenericMessageResponse(BaseModel):
+    """Generic single-field message response."""
+
+    message: str
+
+
+class ResetPasswordRequest(BaseModel):
+    """Request body for completing a password reset."""
+
+    token: str
+    new_password: str = Field(..., min_length=8)
+
+
+class TokenVerifyResponse(BaseModel):
+    """Result of checking whether a reset token is currently valid."""
+
+    valid: bool

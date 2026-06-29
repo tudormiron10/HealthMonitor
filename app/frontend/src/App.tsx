@@ -8,6 +8,8 @@ import LandingPage from '@/presentation/pages/public/LandingPage';
 import PlatformPage from '@/presentation/pages/public/PlatformPage';
 import RegisterPage from '@/presentation/pages/auth/RegisterPage';
 import LoginPage from '@/presentation/pages/auth/LoginPage';
+import ForgotPasswordPage from '@/presentation/pages/auth/ForgotPasswordPage';
+import ResetPasswordPage from '@/presentation/pages/auth/ResetPasswordPage';
 import DesignTest from '@/presentation/pages/_dev/DesignTest';
 import { PatientDashboard } from '@/presentation/pages/patient/PatientDashboard';
 import { SpecialistHomePage } from '@/presentation/pages/specialist/SpecialistHomePage';
@@ -33,6 +35,7 @@ import { SentPlansPage } from '@/presentation/pages/specialist/SentPlansPage';
 import { PublicSpecialistProfilePage } from '@/presentation/pages/specialists/PublicSpecialistProfilePage';
 import { MessagesPage } from '@/presentation/pages/messages/MessagesPage';
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -49,6 +52,8 @@ function App() {
         <Route element={<AuthLayout />}>
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/reset-password" element={<ResetPasswordPage />} />
         </Route>
 
         {/* Public specialist profiles — auth required, no DashboardLayout */}

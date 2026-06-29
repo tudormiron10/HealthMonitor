@@ -142,6 +142,12 @@ class SqlAlchemyUserRepository(UserRepository):
         await self.session.execute(stmt)
         await self.session.flush()
 
+    async def update_password(self, user_id: UUID, new_hash: str) -> None:
+        """Update the password_hash of a user by primary key."""
+        stmt = update(UserORM).where(UserORM.id == user_id).values(password_hash=new_hash)
+        await self.session.execute(stmt)
+        await self.session.flush()
+
     async def set_active(self, user_id: UUID, is_active: bool) -> dict | None:
         """Set the is_active status of a user by primary key and return the updated row."""
         stmt = update(UserORM).where(UserORM.id == user_id).values(is_active=is_active)

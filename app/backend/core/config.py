@@ -37,6 +37,8 @@ class Settings(BaseSettings):
 
     cors_origins: list[str] = ["http://localhost:3000", "http://localhost:5173"]
 
+    frontend_base_url: str = "http://localhost:5173"
+
     mail_username: str = ""
     mail_password: str = ""
     mail_from: str = ""

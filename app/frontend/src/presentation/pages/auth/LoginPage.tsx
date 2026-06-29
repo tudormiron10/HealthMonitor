@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLogin } from '@/application';
 import { UserRole } from '@/domain';
 import { Input } from '@/presentation/components/ui/Input';
@@ -9,11 +9,22 @@ import { Button } from '@/presentation/components/ui/Button';
 export const LoginPage: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
   const { isLoading, error, submitLogin } = useLogin();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [validationError, setValidationError] = useState<string | null>(null);
+  const [resetSuccess] = useState<boolean>(
+    () => !!(location.state as { resetSuccess?: boolean } | null)?.resetSuccess
+  );
+
+  useEffect(() => {
+    if ((location.state as { resetSuccess?: boolean } | null)?.resetSuccess) {
+      // Drop the router state so the banner does not reappear on reload/back.
+      window.history.replaceState({}, '');
+    }
+  }, [location.state]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -55,6 +66,12 @@ export const LoginPage: React.FC = () => {
           </p>
         </div>
 
+        {resetSuccess && (
+          <div className="mb-6 p-4 bg-green-50 border-l-4 border-l-green-500 border-green-200 text-green-700 rounded-lg text-sm shadow-sm font-medium">
+            {t('login.resetSuccess')}
+          </div>
+        )}
+
         {(error || validationError) && (
           <div className="mb-6 p-4 bg-red-50 border-l-4 border-l-red-500 border-red-200 text-red-600 rounded-lg text-sm shadow-sm font-medium">
             {validationError || error}
@@ -79,6 +96,12 @@ export const LoginPage: React.FC = () => {
             placeholder="••••••••"
             required
           />
+
+          <div className="flex justify-center -mt-2">
+            <Link to="/forgot-password" className="text-sm text-primary/80 hover:text-primary font-medium hover:underline">
+              {t('login.forgotPassword')}
+            </Link>
+          </div>
 
           <Button type="submit" disabled={isLoading} className="w-full text-lg mt-2">
             {isLoading ? t('login.buttons.loading') : t('login.buttons.submit')}

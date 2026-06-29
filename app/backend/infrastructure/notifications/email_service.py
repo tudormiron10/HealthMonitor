@@ -50,7 +50,10 @@ class EmailNotificationService(NotificationService):
         msg = MessageSchema(
             subject="Cont verificat — HealthMonitor",
             recipients=[email],
-            template_body={"first_name": first_name},
+            template_body={
+                "first_name": first_name,
+                "frontend_base_url": self._settings.frontend_base_url,
+            },
             subtype=MessageType.html,
         )
         await mailer.send_message(msg, template_name="verification_approved.html")
@@ -64,8 +67,35 @@ class EmailNotificationService(NotificationService):
         msg = MessageSchema(
             subject="Înregistrare respinsă — HealthMonitor",
             recipients=[email],
-            template_body={"first_name": first_name, "reason": reason},
+            template_body={
+                "first_name": first_name,
+                "reason": reason,
+                "frontend_base_url": self._settings.frontend_base_url,
+            },
             subtype=MessageType.html,
         )
         await mailer.send_message(msg, template_name="verification_rejected.html")
         logger.info("Verification rejected email sent to %s", email)
+
+    async def send_password_reset(
+        self, email: str, first_name: str, reset_link: str, lang: str
+    ) -> None:
+        """Send a password reset link; logs the link instead when mail is unconfigured."""
+        mailer = self._get_mailer()
+        if mailer is None:
+            logger.info("Password reset link for %s: %s", email, reset_link)
+            return
+        if lang == "en":
+            subject = "Password reset — HealthMonitor"
+            template_name = "password_reset_en.html"
+        else:
+            subject = "Resetare parolă — HealthMonitor"
+            template_name = "password_reset_ro.html"
+        msg = MessageSchema(
+            subject=subject,
+            recipients=[email],
+            template_body={"first_name": first_name, "reset_link": reset_link},
+            subtype=MessageType.html,
+        )
+        await mailer.send_message(msg, template_name=template_name)
+        logger.info("Password reset email sent to %s", email)

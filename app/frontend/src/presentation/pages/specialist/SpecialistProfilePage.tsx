@@ -82,7 +82,7 @@ export const SpecialistProfilePage: React.FC = () => {
     : null;
 
   return (
-    <div className="space-y-6 max-w-3xl mx-auto">
+    <div className="space-y-6 max-w-3xl mx-auto pb-12">
       {/* Header strip */}
       <div className="bg-primary rounded-2xl p-6 space-y-5">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">

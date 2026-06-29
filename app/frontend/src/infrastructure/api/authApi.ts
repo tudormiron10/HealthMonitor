@@ -28,6 +28,23 @@ export const uploadVerificationDocument = async (file: File): Promise<void> => {
   });
 };
 
+export const requestPasswordReset = async (email: string, lang: string): Promise<void> => {
+  await apiClient.post('/auth/forgot-password', { email }, {
+    headers: { 'Accept-Language': lang },
+  });
+};
+
+export const verifyResetToken = async (token: string): Promise<boolean> => {
+  const response = await apiClient.get<{ valid: boolean }>('/auth/reset-password/verify', {
+    params: { token },
+  });
+  return response.data.valid;
+};
+
+export const resetPassword = async (token: string, newPassword: string): Promise<void> => {
+  await apiClient.post('/auth/reset-password', { token, new_password: newPassword });
+};
+
 export const loginUser = async (
   email: string,
   password: string

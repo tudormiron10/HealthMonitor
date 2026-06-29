@@ -1,6 +1,8 @@
 """Authentication and Identity endpoints."""
 
-from fastapi import APIRouter, Depends, File, Request, UploadFile
+import logging
+
+from fastapi import APIRouter, Depends, File, Header, Request, UploadFile
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.ext.asyncio import AsyncSession # type: ignore
 
@@ -9,17 +11,28 @@ from uuid import UUID
 from api.dependencies import get_current_user, get_db, get_file_storage, require_role
 from domain.ports.file_storage_port import FileStorage
 from api.routes.schemas.auth_schemas import (
+    ForgotPasswordRequest,
+    GenericMessageResponse,
     PatientRegistrationRequest,
     RegistrationResponse,
+    ResetPasswordRequest,
     SpecialistRegistrationRequest,
+    TokenVerifyResponse,
 )
 from application.identity_service import IdentityService
 from application.specialist_service import SpecialistService
+from core.config import get_settings
 from core.exceptions import ValidationException
+from infrastructure.notifications.email_service import EmailNotificationService
 from infrastructure.persistence.models.enums import UserRole
+from infrastructure.persistence.repositories.password_reset_token_repository import (
+    SqlAlchemyPasswordResetTokenRepository,
+)
 from infrastructure.persistence.repositories.patient_repository import SqlAlchemyPatientRepository
 from infrastructure.persistence.repositories.specialist_repository import SqlAlchemySpecialistRepository
 from infrastructure.persistence.repositories.user_repository import SqlAlchemyUserRepository
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
@@ -29,7 +42,14 @@ def get_identity_service(db: AsyncSession = Depends(get_db)) -> IdentityService:
     user_repo = SqlAlchemyUserRepository(db)
     patient_repo = SqlAlchemyPatientRepository(db)
     specialist_repo = SqlAlchemySpecialistRepository(db)
-    return IdentityService(user_repo, patient_repo, specialist_repo)
+    return IdentityService(
+        user_repo,
+        patient_repo,
+        specialist_repo,
+        reset_token_repo=SqlAlchemyPasswordResetTokenRepository(db),
+        notification_service=EmailNotificationService(get_settings()),
+        settings=get_settings(),
+    )
 
 @router.post("/register/patient", response_model=RegistrationResponse, status_code=201)
 async def register_patient(
@@ -76,6 +96,45 @@ async def login(
 ):
     """Authenticate a standard user via email and password."""
     return await identity_service.authenticate_user(form_data)
+
+
+@router.post("/forgot-password", response_model=GenericMessageResponse, status_code=200)
+async def forgot_password(
+    data: ForgotPasswordRequest,
+    identity_service: IdentityService = Depends(get_identity_service),
+    db: AsyncSession = Depends(get_db),
+    accept_language: str | None = Header(default=None),
+):
+    """Begin a password reset. Always returns a generic 200 (anti-enumeration)."""
+    lang = "en" if (accept_language or "").lower().startswith("en") else "ro"
+    try:
+        await identity_service.request_password_reset(data.email, lang)
+        await db.commit()
+    except Exception:
+        await db.rollback()
+        logger.warning("Password reset request failed for %s", data.email, exc_info=True)
+    return {"message": "If an account exists, a reset link has been sent."}
+
+
+@router.get("/reset-password/verify", response_model=TokenVerifyResponse)
+async def verify_reset_token(
+    token: str,
+    identity_service: IdentityService = Depends(get_identity_service),
+):
+    """Check whether a reset token is currently valid (unused, unexpired)."""
+    return {"valid": await identity_service.verify_reset_token(token)}
+
+
+@router.post("/reset-password", response_model=GenericMessageResponse, status_code=200)
+async def reset_password(
+    data: ResetPasswordRequest,
+    identity_service: IdentityService = Depends(get_identity_service),
+    db: AsyncSession = Depends(get_db),
+):
+    """Complete a password reset using a valid token."""
+    await identity_service.reset_password(data.token, data.new_password)
+    await db.commit()
+    return {"message": "Password updated."}
 
 
 _SPECIALIST_ROLES = [UserRole.DOCTOR, UserRole.NUTRITIONIST, UserRole.COACH]

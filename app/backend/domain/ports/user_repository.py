@@ -45,3 +45,7 @@ class UserRepository(ABC):
     @abstractmethod
     async def set_active(self, user_id: UUID, is_active: bool) -> dict | None:
         """Set is_active for a user and return the updated user dict, or None if not found."""
+
+    @abstractmethod
+    async def update_password(self, user_id: UUID, new_hash: str) -> None:
+        """Update users.password_hash for a given user."""

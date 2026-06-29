@@ -6,6 +6,7 @@ abe_keys/
 
 uploads/
 /Rezultat_*.pdf
+/HealthMonitor/
 
 # ===== Python =====
 __pycache__/
