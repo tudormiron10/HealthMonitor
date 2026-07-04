@@ -98,7 +98,7 @@ export const RawMarkersTable: React.FC<RawMarkersTableProps> = ({ recordA, recor
 
               return (
                 <tr key={key} className="hover:bg-brand-light/10 transition-colors group">
-                  <td className="p-3 font-mono text-sm text-brand-dark font-bold uppercase tracking-wider">{key.replace(/_/g, ' ')}</td>
+                  <td className="p-3 text-sm text-brand-dark font-medium">{t(`markers.${key}`, { defaultValue: key.replace(/_/g, ' ') })}</td>
                   <td className="p-3 font-medium text-brand-dark/80">
                     {isLocked ? lockIcon : (typeof valA === 'number' ? valA.toFixed(2) : '-')}
                   </td>

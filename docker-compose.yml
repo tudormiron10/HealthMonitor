@@ -1,0 +1,55 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: healthmonitor-postgres
+    env_file: .env.docker
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d healthmonitor"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: ./app/backend
+    container_name: healthmonitor-backend
+    env_file: .env.docker
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./modele:/models:ro
+      - ./app/backend/abe_keys:/app/abe_keys
+      - ./app/backend/uploads:/app/uploads
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./app/frontend
+    container_name: healthmonitor-frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+  # Optional one-shot demo-data loader. Reuses the backend image, the same env,
+  # and the same mounted ABE keys + ML models so encryption/predictions match.
+  # Run with:  docker compose --profile seed run --rm seed
+  seed:
+    build: ./app/backend
+    profiles: ["seed"]
+    env_file: .env.docker
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./modele:/models:ro
+      - ./app/backend/abe_keys:/app/abe_keys
+      - ./app/backend/uploads:/app/uploads
+    command: ["python", "seed.py", "--reset"]
+
+volumes:
+  pgdata:

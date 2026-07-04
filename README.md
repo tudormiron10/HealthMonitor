@@ -3,6 +3,24 @@ Once running:
 - Backend API: http://localhost:8000  (docs: http://localhost:8000/docs)
 - Frontend app: http://localhost:5173
 
+## Quick start with Docker (one command)
+
+Requires Docker Desktop. From the project root:
+
+```bash
+docker compose up --build        # or double-click start.bat on Windows
+```
+
+This starts PostgreSQL, the backend (migrations run automatically), and the
+frontend. Then optionally load demo data:
+
+```bash
+docker compose --profile seed run --rm seed     # or double-click seed.bat
+```
+
+Demo accounts and the shared password are listed in **[SEED_USERS.md](SEED_USERS.md)**.
+Stop everything with `docker compose down` (or `stop.bat`); the database volume persists.
+
 ## Prerequisites
 
 - Python 3.12+
